@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://ojjhdsdgxcve"
-path="res://.godot/imported/PrototypeSoldier.png-f7b1ce0b3165948450d73a61785a3189.ctex"
+path="res://.godot/imported/PrototypeSoldier.png-39afb454ca30bc8ed4869c4c9ca441df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Player/PrototypeSoldier.png"
-dest_files=["res://.godot/imported/PrototypeSoldier.png-f7b1ce0b3165948450d73a61785a3189.ctex"]
+source_file="res://PrototypeSoldier.png"
+dest_files=["res://.godot/imported/PrototypeSoldier.png-39afb454ca30bc8ed4869c4c9ca441df.ctex"]
 
 [params]
 

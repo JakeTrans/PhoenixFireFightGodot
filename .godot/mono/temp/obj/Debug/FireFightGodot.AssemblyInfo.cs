@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FireFightGodot")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+93e09956c4e090c3cb11c76bbe826465fab9ab41")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d7cdfccacd2338ce193dd8dd68afd9b41c7fddf7")]
 [assembly: System.Reflection.AssemblyProductAttribute("FireFightGodot")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FireFightGodot")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

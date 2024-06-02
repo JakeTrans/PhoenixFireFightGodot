@@ -27,12 +27,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "player.cs",
-              "DocumentMoniker": "D:\\Git\\FireFightGodot\\player.cs",
-              "RelativeDocumentMoniker": "player.cs",
-              "ToolTip": "D:\\Git\\FireFightGodot\\player.cs",
-              "RelativeToolTip": "player.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Title": "Player.cs",
+              "DocumentMoniker": "D:\\Git\\FireFightGodot\\Player.cs",
+              "RelativeDocumentMoniker": "Player.cs",
+              "ToolTip": "D:\\Git\\FireFightGodot\\Player.cs",
+              "RelativeToolTip": "Player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-02T12:08:39.667Z",
               "EditorCaption": ""
@@ -58,8 +58,7 @@
               "RelativeToolTip": "FireFightLibrary\\FireFightLibrary.deps.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-02T12:08:11.104Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-02T12:08:11.104Z"
             }
           ]
         }
