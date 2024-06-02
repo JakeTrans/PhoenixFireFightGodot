@@ -1,3 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1717093093
+::res://::1717329753
 icon.svg::CompressedTexture2D::8888523223347771293::1717093081::1717093094::1::::<><>::
+player.cs::CSharpScript::-1::1717329746::0::1::::<><>::
+player.tscn::PackedScene::2234172726516680678::1717329753::0::1::::<><>::uid://ojjhdsdgxcve::::res://PrototypeSoldier.png<>res://player.cs
+PrototypeSoldier.png::CompressedTexture2D::1001782349732985038::1717329671::1717329753::1::::<><>::
+::res://Art/::1717329753
