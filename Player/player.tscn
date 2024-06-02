@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://63iq7exf7oli"]
 
-[ext_resource type="Texture2D" uid="uid://ojjhdsdgxcve" path="res://PrototypeSoldier.png" id="1_4c4cp"]
-[ext_resource type="Script" path="res://player.cs" id="1_vhb70"]
+[ext_resource type="Texture2D" uid="uid://ojjhdsdgxcve" path="res://Player/PrototypeSoldier.png" id="1_4c4cp"]
+[ext_resource type="Script" path="res://Player/player.cs" id="1_vhb70"]
 
 [node name="Player" type="Area2D"]
 script = ExtResource("1_vhb70")
