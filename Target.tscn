@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://csto17ik4w6pu"]
 
-[ext_resource type="Texture2D" uid="uid://df16iywvut1lb" path="res://Target/Prototypetarget.png" id="1_vn3qx"]
+[ext_resource type="Texture2D" uid="uid://df16iywvut1lb" path="res://Prototypetarget.png" id="1_vn3qx"]
 
 [node name="Target" type="Area2D"]
 

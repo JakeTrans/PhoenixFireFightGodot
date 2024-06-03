@@ -1,1 +1,5 @@
+res://Target.tscn
+res://player.tscn
 res://main.tscn
+res://player.cs
+res://Target.cs
