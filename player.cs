@@ -13,6 +13,9 @@ public partial class player : Area2D
     public override void _Ready()
     {
         //D:\\Git\\FireFightGodot\\Data\\
+
+        var a = Path.GetDirectoryName(Assembly.GetAssembly(GetType()).Location);
+
         Character = new Character(7, 0);
         //Character.Xpos = (uint)Position.X;
         //Character.Ypos = (uint)Position.Y;
