@@ -12,6 +12,7 @@ public partial class player : Area2D
 
     public override void _Ready()
     {
+        //D:\\Git\\FireFightGodot\\Data\\
         Character = new Character(7, 0);
         //Character.Xpos = (uint)Position.X;
         //Character.Ypos = (uint)Position.Y;
