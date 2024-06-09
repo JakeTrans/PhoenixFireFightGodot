@@ -2,15 +2,19 @@ using Godot;
 using System;
 using FireFight;
 using FireFight.CharacterObjects;
+using GodotPlugins.Game;
 
-public partial class Target : Node
+public partial class Target : Area2D
 {
 	// Called when the node enters the scene tree for the first time.
-	private Character Character { get; set; }
+	public Character Character { get; set; }
 
 	public override void _Ready()
 	{
-		Character = new Character(7, 1);
+		//Character = new Character(7, 1);
+		//Character.Xpos = (uint)Position.X;
+		//Character.Ypos = (uint)Position.Y;
+		//Character.CurrentTarget = null;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
