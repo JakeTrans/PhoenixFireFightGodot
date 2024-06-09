@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.godot/mono/metadata/ide_messaging_meta.txt
+/.godot/mono/temp/bin/Debug/de
+/.godot/mono/temp/bin/Debug/es
+/Properties/launchSettings.json
