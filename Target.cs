@@ -4,21 +4,21 @@ using FireFight;
 using FireFight.CharacterObjects;
 using GodotPlugins.Game;
 
-public partial class Target : Area2D
+public partial class Target : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
-	public Character Character { get; set; }
+    // Called when the node enters the scene tree for the first time.
+    public Character Character { get; set; }
 
-	public override void _Ready()
-	{
-		//Character = new Character(7, 1);
-		//Character.Xpos = (uint)Position.X;
-		//Character.Ypos = (uint)Position.Y;
-		//Character.CurrentTarget = null;
-	}
+    public override void _Ready()
+    {
+        Character = new Character(7, 1);
+        Character.Xpos = (uint)Position.X;
+        Character.Ypos = (uint)Position.Y;
+        Character.CurrentTarget = null;
+    }
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
+    // Called every frame. 'delta' is the elapsed time since the previous frame.
+    public override void _Process(double delta)
+    {
+    }
 }
