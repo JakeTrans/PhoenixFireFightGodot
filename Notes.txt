@@ -1,0 +1,3 @@
+﻿mapscale is 100 , so items are counting in sprites
+
+consider XML for Scenerio Setup

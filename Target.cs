@@ -3,6 +3,7 @@ using System;
 using FireFight;
 using FireFight.CharacterObjects;
 using GodotPlugins.Game;
+using FireFight.Classes;
 
 public partial class Target : Node2D
 {
@@ -15,6 +16,8 @@ public partial class Target : Node2D
         Character.Xpos = (uint)Position.X;
         Character.Ypos = (uint)Position.Y;
         Character.CurrentTarget = null;
+        Character.MapScale = 100;
+        Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -1,4 +1,5 @@
 using FireFight.CharacterObjects;
+using FireFight.Classes;
 using Godot;
 using System;
 using System.Diagnostics;
@@ -16,10 +17,22 @@ public partial class player : Node2D
         Character.Xpos = (uint)Position.X;
         Character.Ypos = (uint)Position.Y;
         Character.CurrentTarget = null;
+        Character.MapScale = 100;
+        Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
+        Character.RangedWeapons[0].Equipped = true;
+        Character.CurrentAimAmount = 20;
+
+        //
+
+        //Character.FireFunction();
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
+        Node2D targetNode = GetNode<Node2D>("/root/Main/Target");
+        Target targetObject = (Target)targetNode;
+        Character.CurrentTarget = targetObject.Character;
+        Character.FireFunction();
     }
 }
