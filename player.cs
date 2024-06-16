@@ -30,9 +30,9 @@ public partial class player : Node2D
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
-        Node2D targetNode = GetNode<Node2D>("/root/Main/Target");
-        Target targetObject = (Target)targetNode;
-        Character.CurrentTarget = targetObject.Character;
-        Character.FireFunction();
+        //Node2D targetNode = GetNode<Node2D>("/root/Main/Target");
+        //Target targetObject = (Target)targetNode;
+        //Character.CurrentTarget = targetObject.Character;
+        //Character.FireFunction();
     }
 }

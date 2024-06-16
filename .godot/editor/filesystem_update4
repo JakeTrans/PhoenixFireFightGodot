@@ -1,3 +1,6 @@
-res://main.tscn
+res://HUD.cs
 res://player.cs
 res://Target.cs
+res://main.tscn
+res://player.tscn
+res://hud.tscn
