@@ -1,6 +1,9 @@
-[gd_scene format=3 uid="uid://gxjg27soashb"]
+[gd_scene load_steps=2 format=3 uid="uid://gxjg27soashb"]
+
+[ext_resource type="Script" path="res://hud.cs" id="1_sgj3a"]
 
 [node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_sgj3a")
 
 [node name="NW" type="Button" parent="."]
 offset_top = 500.0
@@ -9,6 +12,23 @@ offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "NW
+"
+
+[node name="W" type="Button" parent="."]
+offset_top = 550.0
+offset_right = 40.0
+offset_bottom = 590.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "W"
+
+[node name="SW" type="Button" parent="."]
+offset_top = 600.0
+offset_right = 40.0
+offset_bottom = 640.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "SW
 "
 
 [node name="N" type="Button" parent="."]
@@ -21,23 +41,15 @@ size_flags_vertical = 8
 text = "N
 "
 
-[node name="NE" type="Button" parent="."]
-offset_left = 100.0
-offset_top = 500.0
-offset_right = 140.0
-offset_bottom = 540.0
+[node name="S" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 600.0
+offset_right = 90.0
+offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
-text = "NE
+text = "S
 "
-
-[node name="W" type="Button" parent="."]
-offset_top = 550.0
-offset_right = 40.0
-offset_bottom = 590.0
-size_flags_horizontal = 8
-size_flags_vertical = 8
-text = "W"
 
 [node name="E" type="Button" parent="."]
 offset_left = 100.0
@@ -49,25 +61,6 @@ size_flags_vertical = 8
 text = "E
 "
 
-[node name="SW" type="Button" parent="."]
-offset_top = 600.0
-offset_right = 40.0
-offset_bottom = 640.0
-size_flags_horizontal = 8
-size_flags_vertical = 8
-text = "SW
-"
-
-[node name="S" type="Button" parent="."]
-offset_left = 50.0
-offset_top = 600.0
-offset_right = 90.0
-offset_bottom = 640.0
-size_flags_horizontal = 8
-size_flags_vertical = 8
-text = "S
-"
-
 [node name="SE" type="Button" parent="."]
 offset_left = 100.0
 offset_top = 600.0
@@ -75,7 +68,17 @@ offset_right = 140.0
 offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
-text = "S"
+text = "SE"
+
+[node name="NE" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 500.0
+offset_right = 140.0
+offset_bottom = 540.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "NE
+"
 
 [node name="Fire" type="Button" parent="."]
 offset_left = 250.0
@@ -126,3 +129,17 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "End Turn
 "
+
+[connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
+[connection signal="pressed" from="W" to="." method="_on_w_pressed"]
+[connection signal="pressed" from="SW" to="." method="_on_sw_pressed"]
+[connection signal="pressed" from="N" to="." method="_on_n_pressed"]
+[connection signal="pressed" from="S" to="." method="_on_s_pressed"]
+[connection signal="pressed" from="E" to="." method="_on_e_pressed"]
+[connection signal="pressed" from="SE" to="." method="_on_se_pressed"]
+[connection signal="pressed" from="NE" to="." method="_on_ne_pressed"]
+[connection signal="pressed" from="Fire" to="." method="_on_fire_pressed"]
+[connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]
+[connection signal="pressed" from="Target" to="." method="_on_target_pressed"]
+[connection signal="pressed" from="Aim" to="." method="_on_aim_pressed"]
+[connection signal="pressed" from="EndTurn" to="." method="_on_end_turn_pressed"]
