@@ -93,5 +93,7 @@ public partial class hud : CanvasLayer
     {
         PlayerNode.Character.DoAllActions();
         System.Diagnostics.Debug.Print("end turn ran");
+
+        PlayerNode.GlobalPosition = new Vector2(PlayerNode.Character.Xpos, PlayerNode.Character.Ypos);
     }
 }
