@@ -9,7 +9,6 @@ public partial class hud : CanvasLayer
     public override void _Ready()
     {
         PlayerNode = GetNode<player>("/root/Main/Player");
-        System.Diagnostics.Debug.Print("fasffafzsdccddcs");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -80,7 +79,8 @@ public partial class hud : CanvasLayer
     private void _on_target_pressed()
     {
         System.Diagnostics.Debug.Print("target");
-        PlayerNode.Character.CurrentTarget = GetNode<player>("/root/Main/Target").Character;
+        //PlayerNode.Character.CurrentTarget = GetNode<player>("/root/Main/Target").Character;
+        PlayerNode.Character.CurrentTarget = GetNode<Target>("/root/Main/Target").Character;
     }
 
     private void _on_aim_pressed()
@@ -95,5 +95,6 @@ public partial class hud : CanvasLayer
         System.Diagnostics.Debug.Print("end turn ran");
 
         PlayerNode.GlobalPosition = new Vector2(PlayerNode.Character.Xpos, PlayerNode.Character.Ypos);
+        PlayerNode.Character.ActionsForTurn.ActionsTaken.Clear();
     }
 }
