@@ -2,11 +2,8 @@ using FireFight.CharacterObjects;
 using FireFight.Classes;
 using Godot;
 using System;
-using System.Diagnostics;
-using System.IO;
-using System.Reflection;
 
-public partial class player : Node2D
+public partial class Soldier : Node2D
 {
 	// Called when the node enters the scene tree for the first time.
 	public Character Character { get; set; }

@@ -3,11 +3,16 @@
   "WorkspaceRootPath": "D:\\Git\\FireFightGodot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\FireFightLibrary\\FireFightLibrary\\CharacterObjects\\Character.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -23,24 +28,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Character.cs",
-              "DocumentMoniker": "D:\\Git\\FireFightLibrary\\FireFightLibrary\\CharacterObjects\\Character.cs",
-              "RelativeDocumentMoniker": "..\\FireFightLibrary\\FireFightLibrary\\CharacterObjects\\Character.cs",
-              "ToolTip": "D:\\Git\\FireFightLibrary\\FireFightLibrary\\CharacterObjects\\Character.cs",
-              "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\CharacterObjects\\Character.cs",
-              "ViewState": "AQIAANcAAAAAAAAAAAAvwPMAAAAUAAAA",
+              "DocumentIndex": 0,
+              "Title": "Soldier.cs",
+              "DocumentMoniker": "D:\\Git\\FireFightGodot\\Soldier.cs",
+              "RelativeDocumentMoniker": "Soldier.cs",
+              "ToolTip": "D:\\Git\\FireFightGodot\\Soldier.cs",
+              "RelativeToolTip": "Soldier.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:38:41.888Z",
+              "WhenOpened": "2024-06-24T09:37:01.088Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "player.cs",
+              "DocumentMoniker": "D:\\Git\\FireFightGodot\\player.cs",
+              "RelativeDocumentMoniker": "player.cs",
+              "ToolTip": "D:\\Git\\FireFightGodot\\player.cs",
+              "RelativeToolTip": "player.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-24T09:32:12.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Firing.cs",
               "DocumentMoniker": "D:\\Git\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
               "RelativeDocumentMoniker": "..\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
@@ -48,12 +66,11 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAswC0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:39:38.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:39:38.743Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "GameFunctions.cs",
               "DocumentMoniker": "D:\\Git\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "RelativeDocumentMoniker": "..\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
@@ -61,18 +78,17 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:32:32.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:32:32.993Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "hud.cs",
               "DocumentMoniker": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AQIAADwAAAAAAAAAAAA3wFcAAAAuAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAuwFgAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T14:31:34.63Z",
               "EditorCaption": ""

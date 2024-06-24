@@ -1,6 +1,2 @@
-res://main.tscn
-res://hud.cs
-res://player.tscn
 res://hud.tscn
-res://Target.cs
-res://player.cs
+res://Soldier.cs
