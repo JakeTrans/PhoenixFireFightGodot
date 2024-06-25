@@ -1,3 +1,6 @@
 res://main.tscn
+res://hud.cs
 res://main.cs
 res://Soldier.cs
+res://hud.tscn
+res://Soldier.tscn
