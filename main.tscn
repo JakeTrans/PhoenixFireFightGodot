@@ -1,17 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dm1fnuywas1p3"]
+[gd_scene load_steps=3 format=3 uid="uid://dm1fnuywas1p3"]
 
-[ext_resource type="PackedScene" uid="uid://63iq7exf7oli" path="res://player.tscn" id="1_ve4u5"]
-[ext_resource type="PackedScene" uid="uid://csto17ik4w6pu" path="res://Target.tscn" id="2_wbe4a"]
-[ext_resource type="Script" path="res://Target.cs" id="3_441un"]
+[ext_resource type="Script" path="res://main.cs" id="1_a33g5"]
 [ext_resource type="PackedScene" uid="uid://gxjg27soashb" path="res://hud.tscn" id="4_qqxqs"]
 
 [node name="Main" type="Node"]
-
-[node name="Player" parent="." instance=ExtResource("1_ve4u5")]
-position = Vector2(120, 174)
-
-[node name="Target" parent="." instance=ExtResource("2_wbe4a")]
-position = Vector2(366, 164)
-script = ExtResource("3_441un")
+script = ExtResource("1_a33g5")
 
 [node name="HUD" parent="." instance=ExtResource("4_qqxqs")]
