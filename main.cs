@@ -8,7 +8,7 @@ public partial class main : Node
 {
     private PackedScene Soldier = (PackedScene)GD.Load("res://Soldier.tscn");
 
-    public List<Node> Soldiers = new List<Node>();
+    public List<Soldier> Soldiers = new List<Soldier>();
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -17,8 +17,8 @@ public partial class main : Node
 
         AddChild(Soldier1);
 
-        Soldiers.Add(Soldier1);
         Soldier a = (Soldier)Soldier1;
+        Soldiers.Add(a);
         a.Character.Xpos = 200;
 
         a.Character.Ypos = 300;
@@ -28,9 +28,8 @@ public partial class main : Node
 
         AddChild(Soldier2);
 
-        Soldiers.Add(Soldier2);
-
         Soldier b = (Soldier)Soldier2;
+        Soldiers.Add(b);
         b.Character.Xpos = 300;
 
         b.Character.Ypos = 400;
