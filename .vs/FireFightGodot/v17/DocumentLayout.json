@@ -7,21 +7,21 @@
       "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\e02c6d47bcf93dc176fd92dbe50e48b6346bd905c9638f8cf9ab6f4e860123e7\\CSharpInstanceBridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\storeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:storeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Git\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\e02c6d47bcf93dc176fd92dbe50e48b6346bd905c9638f8cf9ab6f4e860123e7\\CSharpInstanceBridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -39,7 +39,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CSharpInstanceBridge.cs",
               "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\e02c6d47bcf93dc176fd92dbe50e48b6346bd905c9638f8cf9ab6f4e860123e7\\CSharpInstanceBridge.cs",
               "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\e02c6d47bcf93dc176fd92dbe50e48b6346bd905c9638f8cf9ab6f4e860123e7\\CSharpInstanceBridge.cs [Read Only]",
@@ -50,15 +50,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "StoredData.cs",
               "DocumentMoniker": "D:\\Git\\FireFightGodot\\StoredData.cs",
               "RelativeDocumentMoniker": "StoredData.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\StoredData.cs",
               "RelativeToolTip": "StoredData.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAsAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T10:34:14.723Z"
+              "WhenOpened": "2024-06-25T10:34:14.723Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -68,7 +69,7 @@
               "RelativeDocumentMoniker": "main.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\main.cs",
               "RelativeToolTip": "main.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAQwDcAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T09:50:16.257Z",
               "EditorCaption": ""
@@ -87,7 +88,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Firing.cs",
               "DocumentMoniker": "D:\\Git\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
               "RelativeDocumentMoniker": "..\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
@@ -95,11 +96,12 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAswC0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:39:38.743Z"
+              "WhenOpened": "2024-06-23T14:39:38.743Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "GameFunctions.cs",
               "DocumentMoniker": "D:\\Git\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "RelativeDocumentMoniker": "..\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
@@ -107,17 +109,18 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:32:32.993Z"
+              "WhenOpened": "2024-06-23T14:32:32.993Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "hud.cs",
               "DocumentMoniker": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-23T14:31:34.63Z",
               "EditorCaption": ""
