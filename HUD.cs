@@ -1,14 +1,16 @@
 using FireFightGodot;
 using Godot;
+using System.Linq;
+using System.Collections.Generic;
+using System.Transactions;
 
 public partial class hud : CanvasLayer
 {
+    private List<Soldier> TargetList;
+
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        //CurrentSoldierNode = GetNode<player>("/root/Main/Player");
-        //CurrentSoldierNode = StoredData.Soldiers[0];
-        //CurrentSoldierNode = StoredData.Soldiers[0];
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -79,8 +81,57 @@ public partial class hud : CanvasLayer
     private void _on_target_pressed()
     {
         System.Diagnostics.Debug.Print("target");
-        //PlayerNode.Character.CurrentTarget = GetNode<player>("/root/Main/Target").Character;
-        //CurrentSoldierNode.Character.CurrentTarget = GetNode<Target>("/root/Main/Target").Character;
+
+        TargetList = StoredData.Soldiers.Where(x => x.Character.Selected == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
+
+        Soldier soldier = null;
+
+        if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
+        {
+            //clear current target
+
+            Soldier oldTarget = StoredData.Soldiers.Where(x => x.Character == StoredData.CurrentSoldierNode.Character.CurrentTarget).First();
+
+            Sprite2D resetSprite = (Sprite2D)oldTarget.GetChild(0);
+            resetSprite.Texture = oldTarget.DefaultSprite;
+
+            //set new target
+            int oldindex = -1;
+
+            for (int i = 0; i < TargetList.Count; i++)
+            {
+                if (TargetList[i].Character.Name == StoredData.CurrentSoldierNode.Character.CurrentTarget.Name)
+                {
+                    oldindex = i;
+                    break;
+                }
+            }
+
+            if (oldindex == -1)
+            {
+                StoredData.CurrentSoldierNode.Character.CurrentTarget = TargetList[0].Character;
+                soldier = TargetList[0];
+            }
+
+            if (oldindex + 1 < TargetList.Count)
+            {
+                StoredData.CurrentSoldierNode.Character.CurrentTarget = TargetList[oldindex + 1].Character;
+                soldier = TargetList[oldindex + 1];
+            }
+            else
+            {
+                StoredData.CurrentSoldierNode.Character.CurrentTarget = TargetList[0].Character;
+                soldier = TargetList[0];
+            }
+        }
+        else
+        {
+            StoredData.CurrentSoldierNode.Character.CurrentTarget = TargetList[0].Character;
+            soldier = TargetList[0];
+        }
+        //set new sprite
+        Sprite2D TargetSprite = (Sprite2D)soldier.GetChild(0);
+        TargetSprite.Texture = soldier.TargetedSprite;
     }
 
     private void _on_aim_pressed()
