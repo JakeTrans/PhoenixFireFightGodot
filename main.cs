@@ -54,6 +54,8 @@ public partial class main : Node
         StoredData.Soldiers = StoredData.Soldiers.OrderByDescending(x => x.Character.INTSkillFactor).ToList();
         StoredData.CurrentSoldierNode = StoredData.Soldiers[0];
         StoredData.CurrentSoldierNode.Character.Selected = true;
+        Sprite2D Sprite = (Sprite2D)StoredData.CurrentSoldierNode.GetChild(0);
+        Sprite.Texture = StoredData.CurrentSoldierNode.SelectedSprite;
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
