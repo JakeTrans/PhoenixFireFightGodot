@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfa8v35k040mx"
-path="res://.godot/imported/PrototypeSoldierSelected.png-9750b6f8d8875ca0129dd5da9c25e137.ctex"
+uid="uid://ojjhdsdgxcve"
+path="res://.godot/imported/PrototypeSoldier.png-f23f269115c013dad2d330b2b534ea1b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PrototypeSoldierSelected.png"
-dest_files=["res://.godot/imported/PrototypeSoldierSelected.png-9750b6f8d8875ca0129dd5da9c25e137.ctex"]
+source_file="res://Sprites/PrototypeSoldier.png"
+dest_files=["res://.godot/imported/PrototypeSoldier.png-f23f269115c013dad2d330b2b534ea1b.ctex"]
 
 [params]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ddpar6f86lo60"]
 
-[ext_resource type="Texture2D" uid="uid://ojjhdsdgxcve" path="res://PrototypeSoldier.png" id="1_4c4cp"]
+[ext_resource type="Texture2D" uid="uid://ojjhdsdgxcve" path="res://Sprites/PrototypeSoldier.png" id="1_4c4cp"]
 
 [sub_resource type="CSharpScript" id="CSharpScript_aumd1"]
 script/source = "using FireFight.CharacterObjects;

@@ -58,8 +58,7 @@
               "RelativeToolTip": "StoredData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-25T10:34:14.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-25T10:34:14.723Z"
             },
             {
               "$type": "Document",
@@ -69,7 +68,7 @@
               "RelativeDocumentMoniker": "main.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\main.cs",
               "RelativeToolTip": "main.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAQwDcAAABAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-25T09:50:16.257Z",
               "EditorCaption": ""
@@ -96,8 +95,7 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Classes\\Firing.cs",
               "ViewState": "AQIAABcAAAAAAAAAAAAswC0AAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:39:38.743Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:39:38.743Z"
             },
             {
               "$type": "Document",
@@ -109,8 +107,7 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:32:32.993Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:32:32.993Z"
             },
             {
               "$type": "Document",
@@ -122,8 +119,7 @@
               "RelativeToolTip": "hud.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:31:34.63Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-23T14:31:34.63Z"
             }
           ]
         }
