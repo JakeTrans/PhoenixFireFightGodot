@@ -68,6 +68,12 @@ public partial class hud : CanvasLayer
 
     private void _on_fire_pressed()
     {
+        if (StoredData.CurrentSoldierNode.Character.CurrentTarget == null)
+        {
+            System.Diagnostics.Debug.Print("no target");
+            return;
+        }
+
         System.Diagnostics.Debug.Print("fire");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.FireSingle);
     }
@@ -142,8 +148,8 @@ public partial class hud : CanvasLayer
 
     private void _on_end_turn_pressed()
     {
-        StoredData.CurrentSoldierNode.Character.DoAllActions();
         System.Diagnostics.Debug.Print("end turn ran");
+        StoredData.CurrentSoldierNode.Character.DoAllActions();
 
         StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
