@@ -99,7 +99,7 @@ public partial class hud : CanvasLayer
             Soldier oldTarget = StoredData.Soldiers.Where(x => x.Character == StoredData.CurrentSoldierNode.Character.CurrentTarget).First();
 
             Sprite2D resetSprite = (Sprite2D)oldTarget.GetChild(0);
-            resetSprite.Texture = oldTarget.DefaultSprite;
+            resetSprite.Texture = StoredData.DefaultSprite;
 
             //set new target
             int oldindex = -1;
@@ -137,7 +137,7 @@ public partial class hud : CanvasLayer
         }
         //set new sprite
         Sprite2D TargetSprite = (Sprite2D)soldier.GetChild(0);
-        TargetSprite.Texture = soldier.TargetedSprite;
+        TargetSprite.Texture = StoredData.TargetedSprite;
     }
 
     private void _on_aim_pressed()

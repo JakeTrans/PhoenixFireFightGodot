@@ -8,10 +8,6 @@ public partial class Soldier : Node2D
     // Called when the node enters the scene tree for the first time.
     public Character Character { get; set; }
 
-    public Texture2D DefaultSprite;
-    public Texture2D SelectedSprite;
-    public Texture2D TargetedSprite;
-
     public override void _Ready()
     {
         Random rnd = new Random();
@@ -24,12 +20,6 @@ public partial class Soldier : Node2D
         Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
         Character.RangedWeapons[0].Equipped = true;
         Character.CurrentAimAmount = 20;
-
-        DefaultSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldier.png");
-
-        SelectedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierSelected.png");
-
-        TargetedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierTargeted.png");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
