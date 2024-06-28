@@ -130,6 +130,13 @@ size_flags_vertical = 8
 text = "End Turn
 "
 
+[node name="Message Handler" type="RichTextLabel" parent="."]
+offset_left = 936.0
+offset_top = 15.0
+offset_right = 1137.0
+offset_bottom = 62.0
+text = "Message Text Goes here"
+
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
 [connection signal="pressed" from="SW" to="." method="_on_sw_pressed"]
