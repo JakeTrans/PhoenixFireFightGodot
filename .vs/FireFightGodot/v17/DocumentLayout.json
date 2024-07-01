@@ -45,8 +45,7 @@
               "ViewState": "AQIAAAgAAAAAAAAAAAAYwCEAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T14:16:13.917Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -56,7 +55,7 @@
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-27T16:45:26.848Z",
               "IsPinned": true,
@@ -72,8 +71,7 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\CharacterObjects\\Character.cs",
               "ViewState": "AQIAAM0AAAAAAAAAAAAYwKwAAABFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-01T13:26:28.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-01T13:26:28.644Z"
             },
             {
               "$type": "Document",
@@ -95,8 +93,7 @@
               "RelativeToolTip": "StoredData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-28T14:14:26.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-06-28T14:14:26.067Z"
             },
             {
               "$type": "Document",
