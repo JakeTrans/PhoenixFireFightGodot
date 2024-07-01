@@ -3,6 +3,7 @@ using Godot;
 using System.Linq;
 using System.Collections.Generic;
 using System.Transactions;
+using System.Security.AccessControl;
 
 public partial class hud : CanvasLayer
 {
@@ -16,6 +17,7 @@ public partial class hud : CanvasLayer
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)
     {
+        hud.setupHud();
     }
 
     private void _on_n_pressed()
@@ -167,7 +169,6 @@ public partial class hud : CanvasLayer
         StoredData.CurrentSoldierNode.Character.DoAllActions();
 
         StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
-        //StoredData.CurrentSoldierNode.Rotation = StoredData.CurrentSoldierNode.Character.GetRotation();
 
         StoredData.CurrentSoldierNode.GlobalRotationDegrees = StoredData.CurrentSoldierNode.Character.GetRotation();
 
@@ -205,5 +206,13 @@ public partial class hud : CanvasLayer
             StoredData.CurrentSoldierNode = StoredData.Soldiers[0];
             StoredData.CurrentSoldierNode.Character.Selected = false;
         }
+    }
+
+    private void setupHud()
+    {
+        // Sprite2D DeselectedSprite = (Sprite2D)StoredData.Soldiers[oldindex].GetChild(0);
+
+        RichTextLabel WeaponName = (RichTextLabel)GetNode("WeaponName");
+        WeaponName.Text = StoredData.CurrentSoldierNode.Character.GetEquippedWeapon().Name;
     }
 }

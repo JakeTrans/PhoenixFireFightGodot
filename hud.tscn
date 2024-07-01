@@ -96,7 +96,7 @@ text = "Fire
 [node name="Reload" type="Button" parent="."]
 offset_left = 350.0
 offset_top = 500.0
-offset_right = 411.0
+offset_right = 420.0
 offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -106,7 +106,7 @@ text = "Reload
 [node name="Target" type="Button" parent="."]
 offset_left = 350.0
 offset_top = 550.0
-offset_right = 411.0
+offset_right = 420.0
 offset_bottom = 590.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -126,7 +126,7 @@ text = "Aim
 [node name="EndTurn" type="Button" parent="."]
 offset_left = 300.0
 offset_top = 600.0
-offset_right = 408.0
+offset_right = 420.0
 offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -158,6 +158,28 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "CW
 "
+
+[node name="WeaponName" type="RichTextLabel" parent="."]
+offset_left = 446.0
+offset_top = 500.0
+offset_right = 566.0
+offset_bottom = 540.0
+text = "Weapon Name
+"
+
+[node name="Ammo" type="RichTextLabel" parent="."]
+offset_left = 440.0
+offset_top = 550.0
+offset_right = 500.0
+offset_bottom = 590.0
+text = "Ammo"
+
+[node name="AmmoCount" type="RichTextLabel" parent="."]
+offset_left = 508.0
+offset_top = 550.0
+offset_right = 568.0
+offset_bottom = 590.0
+text = "0"
 
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
