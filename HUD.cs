@@ -66,6 +66,20 @@ public partial class hud : CanvasLayer
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveW);
     }
 
+    private void _on_anti_clockwise_pressed()
+    {
+        // Replace with function body.
+        System.Diagnostics.Debug.Print("ACW");
+        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.RotateAntiClockWise);
+    }
+
+    private void _on_clockwise_pressed()
+    {
+        // Replace with function body.
+        System.Diagnostics.Debug.Print("CS");
+        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.RotateClockwise);
+    }
+
     private void _on_fire_pressed()
     {
         if (StoredData.CurrentSoldierNode.Character.CurrentTarget == null)
@@ -153,6 +167,10 @@ public partial class hud : CanvasLayer
         StoredData.CurrentSoldierNode.Character.DoAllActions();
 
         StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
+        //StoredData.CurrentSoldierNode.Rotation = StoredData.CurrentSoldierNode.Character.GetRotation();
+
+        StoredData.CurrentSoldierNode.GlobalRotationDegrees = StoredData.CurrentSoldierNode.Character.GetRotation();
+
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
 
         int oldindex = -1;

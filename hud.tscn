@@ -6,8 +6,9 @@
 script = ExtResource("1_sgj3a")
 
 [node name="NW" type="Button" parent="."]
+offset_left = 50.0
 offset_top = 500.0
-offset_right = 40.0
+offset_right = 90.0
 offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -15,16 +16,18 @@ text = "NW
 "
 
 [node name="W" type="Button" parent="."]
+offset_left = 50.0
 offset_top = 550.0
-offset_right = 40.0
+offset_right = 90.0
 offset_bottom = 590.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "W"
 
 [node name="SW" type="Button" parent="."]
+offset_left = 50.0
 offset_top = 600.0
-offset_right = 40.0
+offset_right = 90.0
 offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -32,9 +35,9 @@ text = "SW
 "
 
 [node name="N" type="Button" parent="."]
-offset_left = 50.0
+offset_left = 100.0
 offset_top = 500.0
-offset_right = 90.0
+offset_right = 140.0
 offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -42,9 +45,9 @@ text = "N
 "
 
 [node name="S" type="Button" parent="."]
-offset_left = 50.0
+offset_left = 100.0
 offset_top = 600.0
-offset_right = 90.0
+offset_right = 140.0
 offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -52,9 +55,9 @@ text = "S
 "
 
 [node name="E" type="Button" parent="."]
-offset_left = 100.0
+offset_left = 150.0
 offset_top = 550.0
-offset_right = 140.0
+offset_right = 190.0
 offset_bottom = 590.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -62,18 +65,18 @@ text = "E
 "
 
 [node name="SE" type="Button" parent="."]
-offset_left = 100.0
+offset_left = 150.0
 offset_top = 600.0
-offset_right = 140.0
+offset_right = 190.0
 offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "SE"
 
 [node name="NE" type="Button" parent="."]
-offset_left = 100.0
+offset_left = 150.0
 offset_top = 500.0
-offset_right = 140.0
+offset_right = 190.0
 offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -81,9 +84,9 @@ text = "NE
 "
 
 [node name="Fire" type="Button" parent="."]
-offset_left = 250.0
+offset_left = 300.0
 offset_top = 500.0
-offset_right = 290.0
+offset_right = 340.0
 offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -91,9 +94,9 @@ text = "Fire
 "
 
 [node name="Reload" type="Button" parent="."]
-offset_left = 300.0
+offset_left = 350.0
 offset_top = 500.0
-offset_right = 361.0
+offset_right = 411.0
 offset_bottom = 540.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -101,9 +104,9 @@ text = "Reload
 "
 
 [node name="Target" type="Button" parent="."]
-offset_left = 300.0
+offset_left = 350.0
 offset_top = 550.0
-offset_right = 361.0
+offset_right = 411.0
 offset_bottom = 590.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -111,9 +114,9 @@ text = "Target
 "
 
 [node name="Aim" type="Button" parent="."]
-offset_left = 250.0
+offset_left = 300.0
 offset_top = 550.0
-offset_right = 290.0
+offset_right = 340.0
 offset_bottom = 590.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -121,9 +124,9 @@ text = "Aim
 "
 
 [node name="EndTurn" type="Button" parent="."]
-offset_left = 250.0
+offset_left = 300.0
 offset_top = 600.0
-offset_right = 358.0
+offset_right = 408.0
 offset_bottom = 640.0
 size_flags_horizontal = 8
 size_flags_vertical = 8
@@ -136,6 +139,25 @@ offset_top = 15.0
 offset_right = 1137.0
 offset_bottom = 62.0
 text = "Message Text Goes here"
+
+[node name="Anti-Clockwise" type="Button" parent="."]
+offset_top = 500.0
+offset_right = 40.0
+offset_bottom = 540.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "ACW
+"
+
+[node name="Clockwise" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 500.0
+offset_right = 240.0
+offset_bottom = 540.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "CW
+"
 
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
@@ -150,3 +172,5 @@ text = "Message Text Goes here"
 [connection signal="pressed" from="Target" to="." method="_on_target_pressed"]
 [connection signal="pressed" from="Aim" to="." method="_on_aim_pressed"]
 [connection signal="pressed" from="EndTurn" to="." method="_on_end_turn_pressed"]
+[connection signal="pressed" from="Anti-Clockwise" to="." method="_on_anti_clockwise_pressed"]
+[connection signal="pressed" from="Clockwise" to="." method="_on_clockwise_pressed"]
