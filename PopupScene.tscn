@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://853gtdvotrqi"]
+
+[ext_resource type="Script" path="res://PopupScene.cs" id="1_ghrao"]
+[ext_resource type="Texture2D" uid="uid://trf4g34wg23m" path="res://OIP.jpg" id="2_fhxby"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pw3i3"]
+
+[node name="PopupScene" type="Panel"]
+theme_override_styles/panel = SubResource("StyleBoxFlat_pw3i3")
+script = ExtResource("1_ghrao")
+
+[node name="Background" type="Sprite2D" parent="."]
+position = Vector2(308, 143)
+texture = ExtResource("2_fhxby")
+
+[node name="PopupText" type="Label" parent="."]
+layout_mode = 0
+offset_left = 287.0
+offset_top = 210.0
+offset_right = 805.0
+offset_bottom = 421.0
+text = "I'm a Test"
