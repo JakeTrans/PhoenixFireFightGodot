@@ -1,3 +1,7 @@
+res://hud.tscn
 res://hud.cs
 res://Units/Soldier.cs
 res://main.cs
+res://player.tscn
+res://main.tscn
+res://Units/Soldier.tscn
