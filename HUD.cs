@@ -4,6 +4,7 @@ using System.Linq;
 using System.Collections.Generic;
 using System.Transactions;
 using System.Security.AccessControl;
+using FireFight.Classes;
 
 public partial class hud : CanvasLayer
 {
@@ -97,7 +98,7 @@ public partial class hud : CanvasLayer
 
     private void _on_reload_pressed()
     {
-        LoadPopup("Reload");
+        //LoadPopup("Reload");
         System.Diagnostics.Debug.Print("reload");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.Reload);
     }
@@ -168,7 +169,38 @@ public partial class hud : CanvasLayer
     {
         //Take Actions
         System.Diagnostics.Debug.Print("end turn ran");
-        StoredData.CurrentSoldierNode.Character.DoAllActions();
+        //StoredData.CurrentSoldierNode.Character.DoAllActions();
+
+        // Loop through StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken
+
+        foreach (FireFight.Classes.ActionsPossible action in StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken)
+        {
+            System.Diagnostics.Debug.Print(action.ToString());
+
+            if (action == FireFight.Classes.ActionsPossible.FireSingle || action == FireFight.Classes.ActionsPossible.FireBurst)
+            {
+                DamageResult Result = StoredData.CurrentSoldierNode.Character.DoAction(action);
+                if (Result != null)
+                {
+                    if (Result.Disabling == false)
+                    {
+                        LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation + " for " + Result.DisplayDamage);
+                    }
+                    else
+                    {
+                        LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation + " for " + Result.DisplayDamage + " was disabling");
+                    }
+                }
+                else
+                {
+                    LoadPopup("Shot Taken - Missed");
+                }
+            }
+            else
+            {
+                StoredData.CurrentSoldierNode.Character.DoAction(action);
+            }
+        }
 
         StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
 
