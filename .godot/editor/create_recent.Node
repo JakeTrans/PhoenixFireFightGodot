@@ -1,10 +1,10 @@
+Button
 Sprite2D
 Label
 Panel
 RichTextLabel
 VBoxContainer
 Area2D
-Button
 CanvasLayer
 Node2D
 Node
