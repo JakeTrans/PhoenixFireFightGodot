@@ -184,11 +184,11 @@ public partial class hud : CanvasLayer
                 {
                     if (Result.Disabling == false)
                     {
-                        LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation + " for " + Result.DisplayDamage);
+                        LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation + " for " + Result.DamageAmount);
                     }
                     else
                     {
-                        LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation + " for " + Result.DisplayDamage + " was disabling");
+                        LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation + " for " + Result.DamageAmount + " was disabling");
                     }
                 }
                 else
