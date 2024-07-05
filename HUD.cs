@@ -223,7 +223,7 @@ public partial class hud : CanvasLayer
 
         //set new sprite
 
-        Sprite2D DeselectedSprite = (Sprite2D)StoredData.Soldiers[oldindex].GetChild(0);
+        Sprite2D DeselectedSprite = (Sprite2D)FilteredList[oldindex].GetChild(0);
         DeselectedSprite.Texture = StoredData.DefaultSprite;
 
         //Next Characters turn
