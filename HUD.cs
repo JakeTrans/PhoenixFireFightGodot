@@ -107,7 +107,8 @@ public partial class hud : CanvasLayer
     {
         System.Diagnostics.Debug.Print("target");
 
-        TargetList = StoredData.Soldiers.Where(x => x.Character.Selected == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
+        //TargetList = StoredData.Soldiers.Where(x => x.Character.Selected == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
+        TargetList = StoredData.Soldiers.Where(x => x.Character.Selected == false && x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
 
         Soldier soldier = null;
 
@@ -208,10 +209,12 @@ public partial class hud : CanvasLayer
 
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
 
+        List<Soldier> FilteredList = StoredData.Soldiers.Where(x => x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
+
         int oldindex = -1;
-        for (int i = 0; i < StoredData.Soldiers.Count; i++)
+        for (int i = 0; i < FilteredList.Count; i++)
         {
-            if (StoredData.Soldiers[i].Character.Name == StoredData.CurrentSoldierNode.Character.Name)
+            if (FilteredList[i].Character.Name == StoredData.CurrentSoldierNode.Character.Name)
             {
                 oldindex = i;
                 break;
@@ -224,20 +227,20 @@ public partial class hud : CanvasLayer
         DeselectedSprite.Texture = StoredData.DefaultSprite;
 
         //Next Characters turn
-        if (oldindex + 1 < StoredData.Soldiers.Count)
+        if (oldindex + 1 < FilteredList.Count)
         {
-            StoredData.Soldiers[oldindex + 1].Character.Selected = true;
-            Sprite2D SelectedSprite = (Sprite2D)StoredData.Soldiers[oldindex + 1].GetChild(0);
+            FilteredList[oldindex + 1].Character.Selected = true;
+            Sprite2D SelectedSprite = (Sprite2D)FilteredList[oldindex + 1].GetChild(0);
             SelectedSprite.Texture = StoredData.SelectedSprite;
-            StoredData.CurrentSoldierNode = StoredData.Soldiers[oldindex + 1];
+            StoredData.CurrentSoldierNode = FilteredList[oldindex + 1];
             StoredData.CurrentSoldierNode.Character.Selected = false;
         }
         else
         {
-            StoredData.Soldiers[0].Character.Selected = true;
-            Sprite2D SelectedSprite = (Sprite2D)StoredData.Soldiers[0].GetChild(0);
+            FilteredList[0].Character.Selected = true;
+            Sprite2D SelectedSprite = (Sprite2D)FilteredList[0].GetChild(0);
             SelectedSprite.Texture = StoredData.SelectedSprite;
-            StoredData.CurrentSoldierNode = StoredData.Soldiers[0];
+            StoredData.CurrentSoldierNode = FilteredList[0];
             StoredData.CurrentSoldierNode.Character.Selected = false;
         }
     }

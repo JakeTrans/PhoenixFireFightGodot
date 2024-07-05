@@ -5,25 +5,26 @@ using System;
 
 public partial class Soldier : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
-	public Character Character { get; set; }
+    // Called when the node enters the scene tree for the first time.
+    public Character Character { get; set; }
 
-	public override void _Ready()
-	{
-		Random rnd = new Random();
-		Character = new Character(7, 0);
-		Character.Name = rnd.Next(1, 10000).ToString();
-		Character.Xpos = (uint)Position.X;
-		Character.Ypos = (uint)Position.Y;
-		Character.CurrentTarget = null;
-		Character.MapScale = 100;
-		Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
-		Character.RangedWeapons[0].Equipped = true;
-		Character.CurrentAimAmount = 20;
-	}
+    public override void _Ready()
+    {
+        Random rnd = new Random();
+        Character = new Character(7, 0);
+        Character.Name = rnd.Next(1, 10000).ToString();
+        Character.Xpos = (uint)Position.X;
+        Character.Ypos = (uint)Position.Y;
+        Character.CurrentTarget = null;
+        Character.MapScale = 100;
+        Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
+        Character.RangedWeapons[0].Equipped = true;
+        Character.RangedWeapons[0].CurrentAmmo = Character.RangedWeapons[0].CilpCapacity;
+        Character.CurrentAimAmount = 20;
+    }
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-	}
+    // Called every frame. 'delta' is the elapsed time since the previous frame.
+    public override void _Process(double delta)
+    {
+    }
 }
