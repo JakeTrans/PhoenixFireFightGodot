@@ -253,6 +253,8 @@ public partial class hud : CanvasLayer
         WeaponName.Text = StoredData.CurrentSoldierNode.Character.GetEquippedWeapon().Name;
         RichTextLabel CurrentUnit = (RichTextLabel)GetNode("CurrentUnit");
         CurrentUnit.Text = "Selected Unit Name: " + StoredData.CurrentSoldierNode.Character.Name;
+        RichTextLabel CurrentAmmo = (RichTextLabel)GetNode("AmmoCount");
+        CurrentAmmo.Text = StoredData.CurrentSoldierNode.Character.GetEquippedWeapon().CurrentAmmo.ToString();
     }
 
     public void LoadPopup(string PopupText)
