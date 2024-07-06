@@ -89,6 +89,7 @@ public partial class hud : CanvasLayer
         if (StoredData.CurrentSoldierNode.Character.CurrentTarget == null)
         {
             System.Diagnostics.Debug.Print("no target");
+            LoadPopup("No Target Selected");
             return;
         }
 
