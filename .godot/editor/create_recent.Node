@@ -1,3 +1,4 @@
+CollisionShape2D
 Button
 Sprite2D
 Label
@@ -8,4 +9,3 @@ Area2D
 CanvasLayer
 Node2D
 Node
-CollisionShape2D

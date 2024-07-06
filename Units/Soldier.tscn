@@ -1,10 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://b0rvygqiyb8il"]
+[gd_scene load_steps=4 format=3 uid="uid://b0rvygqiyb8il"]
 
 [ext_resource type="Script" path="res://Units/Soldier.cs" id="1_g5xxt"]
 [ext_resource type="Texture2D" uid="uid://ojjhdsdgxcve" path="res://Sprites/PrototypeSoldier.png" id="1_m3tty"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t5a8p"]
+size = Vector2(33, 46)
 
 [node name="Soldier" type="Area2D"]
 script = ExtResource("1_g5xxt")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_m3tty")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1)
+shape = SubResource("RectangleShape2D_t5a8p")
