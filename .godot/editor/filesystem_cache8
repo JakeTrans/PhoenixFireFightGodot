@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720252946
-hud.cs::CSharpScript::-1::1720187542::0::1::::<>CanvasLayer<>::
+::res://::1720255109
+hud.cs::CSharpScript::-1::1720253020::0::1::::<>CanvasLayer<>::
 hud.tscn::PackedScene::469172386270659287::1720104161::0::1::::<><>::res://hud.cs
 icon.svg::CompressedTexture2D::8888523223347771293::1717093081::1717330905::1::::<><>::
 main.cs::CSharpScript::-1::1720185126::0::1::::<>Node<>::
@@ -23,6 +23,6 @@ PrototypeSoldier.png::CompressedTexture2D::1001782349732985038::1719845031::1719
 PrototypeSoldierKnockedOut.png::CompressedTexture2D::2362903645544274102::1720184320::1720184325::1::::<><>::
 PrototypeSoldierSelected.png::CompressedTexture2D::2739407581803427403::1719845031::1719587240::1::::<><>::
 PrototypeSoldierTargeted.png::CompressedTexture2D::8176461578140757858::1719845031::1719587240::1::::<><>::
-::res://Units/::1720185126
+::res://Units/::1720253020
 Soldier.cs::CSharpScript::-1::1720185126::0::1::::<>Node2D<>::
-Soldier.tscn::PackedScene::4177554452617344807::1720184373::0::1::::<><>::res://Units/Soldier.cs<>uid://ojjhdsdgxcve::::res://Sprites/PrototypeSoldier.png
+Soldier.tscn::PackedScene::4177554452617344807::1720253020::0::1::::<><>::res://Units/Soldier.cs<>uid://ojjhdsdgxcve::::res://Sprites/PrototypeSoldier.png
