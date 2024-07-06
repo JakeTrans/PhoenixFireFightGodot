@@ -19,7 +19,6 @@ public partial class Soldier : Node2D
 		Character.MapScale = 100;
 		Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
 		Character.RangedWeapons[0].Equipped = true;
-		Character.RangedWeapons[0].CurrentAmmo = Character.RangedWeapons[0].CilpCapacity;
 		Character.CurrentAimAmount = 20;
 	}
 

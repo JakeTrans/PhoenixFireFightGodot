@@ -1,9 +1,5 @@
+res://main.tscn
 res://hud.cs
 res://Units/Soldier.cs
 res://main.cs
 res://PopupScene.cs
-res://hud.tscn
-res://player.tscn
-res://main.tscn
-res://Units/Soldier.tscn
-res://PopupScene.tscn

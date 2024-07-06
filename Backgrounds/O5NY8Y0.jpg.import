@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://trf4g34wg23m"
-path="res://.godot/imported/OIP.jpg-4c33fd4baa18e7313ecd31ebec956739.ctex"
+uid="uid://d3n41gbqp2ass"
+path="res://.godot/imported/O5NY8Y0.jpg-829bfe5f4d74bc5cfd0f6c931ae1d5df.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://OIP.jpg"
-dest_files=["res://.godot/imported/OIP.jpg-4c33fd4baa18e7313ecd31ebec956739.ctex"]
+source_file="res://Backgrounds/O5NY8Y0.jpg"
+dest_files=["res://.godot/imported/O5NY8Y0.jpg-829bfe5f4d74bc5cfd0f6c931ae1d5df.ctex"]
 
 [params]
 
