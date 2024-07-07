@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1720363456
+::res://::1720377922
 hud.cs::CSharpScript::-1::1720352403::0::1::::<>CanvasLayer<>::
 hud.tscn::PackedScene::469172386270659287::1720255166::0::1::::<><>::res://hud.cs
 icon.svg::CompressedTexture2D::8888523223347771293::1717093081::1717330905::1::::<><>::
@@ -23,7 +23,7 @@ PrototypeSoldier.png::CompressedTexture2D::1001782349732985038::1719845031::1719
 PrototypeSoldierKnockedOut.png::CompressedTexture2D::2362903645544274102::1720257233::1720257233::1::::<><>::
 PrototypeSoldierSelected.png::CompressedTexture2D::2739407581803427403::1719845031::1719587240::1::::<><>::
 PrototypeSoldierTargeted.png::CompressedTexture2D::8176461578140757858::1719845031::1719587240::1::::<><>::
-::res://Sprites/Soldier/::1720363809
+::res://Sprites/Soldier/::1720363819
 SoliderDefault.png::CompressedTexture2D::7516977427463009216::1720363354::1720363457::1::::<><>::
 SoliderKnockedOut.png::CompressedTexture2D::4311255674336652256::1720363809::1720363819::1::::<><>::
 SoliderSelected.png::CompressedTexture2D::6001366764431232617::1720363707::1720363716::1::::<><>::
