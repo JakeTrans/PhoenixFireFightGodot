@@ -208,6 +208,10 @@ public partial class hud : CanvasLayer
         //Check for end of game
         //TODO: Check for end of game
         bool GameEnd = DetectGameEnd();
+        if (GameEnd == true)
+        {
+            LoadPopup("Game Over");
+        }
 
         StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
 
