@@ -207,6 +207,7 @@ public partial class hud : CanvasLayer
 
         //Check for end of game
         //TODO: Check for end of game
+        bool GameEnd = DetectGameEnd();
 
         StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
 
@@ -268,5 +269,22 @@ public partial class hud : CanvasLayer
         ((Label)Popupscene.GetChild(1)).Text = PopupText;
 
         AddChild(Popupscene);
+    }
+
+    public bool DetectGameEnd()
+    {
+        //Check for end of game
+        //TODO: Check for end of game
+
+        List<IGrouping<uint, Soldier>> sides = StoredData.Soldiers.Where(x => x.Character.KnockedOut == false).GroupBy(x => x.Character.Sidereference).ToList();
+
+        if (sides.Count == 1) //only one side
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
