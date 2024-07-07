@@ -230,23 +230,21 @@ public partial class hud : CanvasLayer
 
         Sprite2D DeselectedSprite = (Sprite2D)FilteredList[oldindex].GetChild(0);
         DeselectedSprite.Texture = StoredData.DefaultSprite;
-
+        StoredData.CurrentSoldierNode.Character.Selected = false;
         //Next Characters turn
         if (oldindex + 1 < FilteredList.Count)
         {
-            FilteredList[oldindex + 1].Character.Selected = true;
             Sprite2D SelectedSprite = (Sprite2D)FilteredList[oldindex + 1].GetChild(0);
             SelectedSprite.Texture = StoredData.SelectedSprite;
             StoredData.CurrentSoldierNode = FilteredList[oldindex + 1];
-            StoredData.CurrentSoldierNode.Character.Selected = false;
+            StoredData.CurrentSoldierNode.Character.Selected = true;
         }
         else
         {
-            FilteredList[0].Character.Selected = true;
             Sprite2D SelectedSprite = (Sprite2D)FilteredList[0].GetChild(0);
             SelectedSprite.Texture = StoredData.SelectedSprite;
             StoredData.CurrentSoldierNode = FilteredList[0];
-            StoredData.CurrentSoldierNode.Character.Selected = false;
+            StoredData.CurrentSoldierNode.Character.Selected = true;
         }
     }
 
