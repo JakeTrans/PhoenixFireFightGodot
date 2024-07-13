@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://hud.cs" id="1_sgj3a"]
 
-[node name="HUD" type="CanvasLayer"]
+[node name="hud" type="CanvasLayer"]
 script = ExtResource("1_sgj3a")
 
 [node name="NW" type="Button" parent="."]
