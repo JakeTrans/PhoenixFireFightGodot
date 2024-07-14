@@ -1,9 +1,96 @@
-[gd_scene load_steps=6 format=3 uid="uid://b0rvygqiyb8il"]
+[gd_scene load_steps=26 format=3 uid="uid://b0rvygqiyb8il"]
 
 [ext_resource type="Script" path="res://Units/Soldier.cs" id="1_g5xxt"]
 [ext_resource type="Texture2D" uid="uid://bayhawh7npnno" path="res://Sprites/SoldierIdle/survivor-idle_rifle_0_rotated.png" id="2_nawfp"]
 [ext_resource type="Texture2D" uid="uid://bxa0f5qcco5js" path="res://Sprites/Soldier/SelectedSprite.png" id="3_4o6yc"]
 [ext_resource type="Texture2D" uid="uid://cu81yi2c8o15" path="res://Sprites/TargetedSprite.png" id="3_hti0k"]
+[ext_resource type="Texture2D" uid="uid://jpa2o4cdincv" path="res://Sprites/SoldierIdle/survivor-idle_rifle_1_rotated.png" id="5_0xgrx"]
+[ext_resource type="Texture2D" uid="uid://b8cvtciwsib3m" path="res://Sprites/SoldierIdle/survivor-idle_rifle_2_rotated.png" id="6_grer6"]
+[ext_resource type="Texture2D" uid="uid://dq085vdvufyd2" path="res://Sprites/SoldierIdle/survivor-idle_rifle_3_rotated.png" id="7_j6u3i"]
+[ext_resource type="Texture2D" uid="uid://co12s5h3roehv" path="res://Sprites/SoldierIdle/survivor-idle_rifle_4_rotated.png" id="8_ng1m1"]
+[ext_resource type="Texture2D" uid="uid://ce5sikhp4oxs1" path="res://Sprites/SoldierIdle/survivor-idle_rifle_5_rotated.png" id="9_1582k"]
+[ext_resource type="Texture2D" uid="uid://vchdsmkb3s1k" path="res://Sprites/SoldierIdle/survivor-idle_rifle_6_rotated.png" id="10_2i7lf"]
+[ext_resource type="Texture2D" uid="uid://b5egtmbimio2t" path="res://Sprites/SoldierIdle/survivor-idle_rifle_7_rotated.png" id="11_fcadl"]
+[ext_resource type="Texture2D" uid="uid://bxapr0ory5a72" path="res://Sprites/SoldierIdle/survivor-idle_rifle_8_rotated.png" id="12_4rh0o"]
+[ext_resource type="Texture2D" uid="uid://c42bb52r4hi71" path="res://Sprites/SoldierIdle/survivor-idle_rifle_9_rotated.png" id="13_8o51g"]
+[ext_resource type="Texture2D" uid="uid://cymum1kmbxq0c" path="res://Sprites/SoldierIdle/survivor-idle_rifle_10_rotated.png" id="14_p5r3b"]
+[ext_resource type="Texture2D" uid="uid://dmyo7mia8ojx5" path="res://Sprites/SoldierIdle/survivor-idle_rifle_11_rotated.png" id="15_lgewb"]
+[ext_resource type="Texture2D" uid="uid://c2m7ux2nx14jv" path="res://Sprites/SoldierIdle/survivor-idle_rifle_12_rotated.png" id="16_2orju"]
+[ext_resource type="Texture2D" uid="uid://dfi51cpnnyeu4" path="res://Sprites/SoldierIdle/survivor-idle_rifle_13_rotated.png" id="17_d8bwk"]
+[ext_resource type="Texture2D" uid="uid://g5e6o68e6wwy" path="res://Sprites/SoldierIdle/survivor-idle_rifle_14_rotated.png" id="18_76wg4"]
+[ext_resource type="Texture2D" uid="uid://wfes5mntrg7" path="res://Sprites/SoldierIdle/survivor-idle_rifle_15_rotated.png" id="19_tfh6i"]
+[ext_resource type="Texture2D" uid="uid://dg4njfo58v0nd" path="res://Sprites/SoldierIdle/survivor-idle_rifle_16_rotated.png" id="20_gwtgx"]
+[ext_resource type="Texture2D" uid="uid://bcmkxa5ni5nna" path="res://Sprites/SoldierIdle/survivor-idle_rifle_17_rotated.png" id="21_4vwuv"]
+[ext_resource type="Texture2D" uid="uid://cgaiyhcld80ke" path="res://Sprites/SoldierIdle/survivor-idle_rifle_18_rotated.png" id="22_qc6an"]
+[ext_resource type="Texture2D" uid="uid://r1x4h84vg1lt" path="res://Sprites/SoldierIdle/survivor-idle_rifle_19_rotated.png" id="23_ifta4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_whumy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_nawfp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_0xgrx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_grer6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_j6u3i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ng1m1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_1582k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_2i7lf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_fcadl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_4rh0o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_8o51g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_p5r3b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_lgewb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_2orju")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_d8bwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_76wg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_tfh6i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gwtgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_4vwuv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_qc6an")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ifta4")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t5a8p"]
 size = Vector2(33, 46)
@@ -19,8 +106,10 @@ texture = ExtResource("3_hti0k")
 visible = false
 texture = ExtResource("3_4o6yc")
 
-[node name="Soldiersprite" type="Sprite2D" parent="."]
-texture = ExtResource("2_nawfp")
+[node name="SoldierspriteAnimated" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_whumy")
+animation = &"Idle"
+frame_progress = 0.409292
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)
