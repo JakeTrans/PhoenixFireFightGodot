@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://b0rvygqiyb8il"]
+[gd_scene load_steps=6 format=3 uid="uid://b0rvygqiyb8il"]
 
 [ext_resource type="Script" path="res://Units/Soldier.cs" id="1_g5xxt"]
-[ext_resource type="Texture2D" uid="uid://ojjhdsdgxcve" path="res://Sprites/PrototypeSoldier.png" id="1_m3tty"]
+[ext_resource type="Texture2D" uid="uid://bayhawh7npnno" path="res://Sprites/SoldierIdle/survivor-idle_rifle_0_rotated.png" id="2_nawfp"]
+[ext_resource type="Texture2D" uid="uid://bxa0f5qcco5js" path="res://Sprites/Soldier/SelectedSprite.png" id="3_4o6yc"]
+[ext_resource type="Texture2D" uid="uid://cu81yi2c8o15" path="res://Sprites/TargetedSprite.png" id="3_hti0k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t5a8p"]
 size = Vector2(33, 46)
@@ -9,8 +11,16 @@ size = Vector2(33, 46)
 [node name="Soldier" type="Area2D"]
 script = ExtResource("1_g5xxt")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_m3tty")
+[node name="Targeted" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_hti0k")
+
+[node name="Selected" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("3_4o6yc")
+
+[node name="Soldiersprite" type="Sprite2D" parent="."]
+texture = ExtResource("2_nawfp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-0.5, -1)

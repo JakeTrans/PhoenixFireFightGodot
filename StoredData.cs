@@ -10,11 +10,11 @@ namespace FireFightGodot
         public static Soldier CurrentSoldierNode;
 
         //Basic Sprites
-        public static Texture2D DefaultSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldier.png");
+        //public static Texture2D DefaultSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldier.png");
 
-        public static Texture2D SelectedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierSelected.png");
-        public static Texture2D TargetedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierTargeted.png");
-        public static Texture2D KnockedOutSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierKnockedOut.png");
+        //public static Texture2D SelectedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierSelected.png");
+        //public static Texture2D TargetedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierTargeted.png");
+        //public static Texture2D KnockedOutSprite = (Texture2D)ResourceLoader.Load("res://Sprites/PrototypeSoldierKnockedOut.png");
         //New Sprites
         //public static Texture2D DefaultSprite = (Texture2D)ResourceLoader.Load("res://Sprites/Soldier/SoliderDefault.png");
         //public static Texture2D SelectedSprite = (Texture2D)ResourceLoader.Load("res://Sprites/Soldier/SoliderSelected.png");
