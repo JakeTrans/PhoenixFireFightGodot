@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Units/Soldier.cs" id="1_g5xxt"]
 [ext_resource type="Texture2D" uid="uid://bayhawh7npnno" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_0_rotated.png" id="2_nawfp"]
 [ext_resource type="Texture2D" uid="uid://bxa0f5qcco5js" path="res://Sprites/Soldier/SelectedSprite.png" id="3_4o6yc"]
-[ext_resource type="Texture2D" uid="uid://cu81yi2c8o15" path="res://Sprites/TargetedSprite.png" id="3_hti0k"]
+[ext_resource type="Texture2D" uid="uid://cu81yi2c8o15" path="res://Sprites/Soldier/TargetedSprite.png" id="3_hti0k"]
 [ext_resource type="Texture2D" uid="uid://jpa2o4cdincv" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_1_rotated.png" id="5_0xgrx"]
 [ext_resource type="Texture2D" uid="uid://b8cvtciwsib3m" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_2_rotated.png" id="6_grer6"]
 [ext_resource type="Texture2D" uid="uid://dq085vdvufyd2" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_3_rotated.png" id="7_j6u3i"]
