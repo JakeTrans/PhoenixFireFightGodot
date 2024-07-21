@@ -8,8 +8,8 @@
 script = ExtResource("1_2c156")
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(574.5, 331)
-scale = Vector2(0.883846, 0.510769)
+position = Vector2(637, 444.75)
+scale = Vector2(0.989231, 0.823461)
 texture = ExtResource("2_d4ih2")
 
 [node name="HUD" parent="." instance=ExtResource("3_vl2m3")]

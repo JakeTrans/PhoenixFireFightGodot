@@ -67,12 +67,12 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HUD.cs",
-              "DocumentMoniker": "D:\\Git\\FireFightGodot\\HUD.cs",
-              "RelativeDocumentMoniker": "HUD.cs",
-              "ToolTip": "D:\\Git\\FireFightGodot\\HUD.cs",
-              "RelativeToolTip": "HUD.cs",
-              "ViewState": "AQIAAOsAAAAAAAAAAAAAAAABAAACAAAA",
+              "Title": "hud.cs",
+              "DocumentMoniker": "D:\\Git\\FireFightGodot\\hud.cs",
+              "RelativeDocumentMoniker": "hud.cs",
+              "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
+              "RelativeToolTip": "hud.cs",
+              "ViewState": "AQIAAAMBAAAAAAAAAAAkwCEBAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T09:06:23.475Z",
               "EditorCaption": ""
