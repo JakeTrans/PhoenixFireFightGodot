@@ -181,6 +181,30 @@ offset_right = 568.0
 offset_bottom = 590.0
 text = "0"
 
+[node name="TargetDetails" type="RichTextLabel" parent="."]
+offset_left = 953.0
+offset_top = 499.0
+offset_right = 1073.0
+offset_bottom = 539.0
+text = "Target Details
+"
+
+[node name="Bearing" type="RichTextLabel" parent="."]
+offset_left = 952.0
+offset_top = 538.0
+offset_right = 1072.0
+offset_bottom = 578.0
+text = "Bearing
+"
+
+[node name="Range" type="RichTextLabel" parent="."]
+offset_left = 955.0
+offset_top = 589.0
+offset_right = 1075.0
+offset_bottom = 629.0
+text = "Range
+"
+
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
 [connection signal="pressed" from="SW" to="." method="_on_sw_pressed"]
