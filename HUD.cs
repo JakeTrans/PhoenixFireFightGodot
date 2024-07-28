@@ -112,6 +112,14 @@ public partial class hud : CanvasLayer
 
         TargetList = StoredData.Soldiers.Where(x => x.Character.Selected == false && x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
 
+        TargetList = TargetList.Where(x => GameFunctions.IsTargetWithinArc(StoredData.CurrentSoldierNode.Character.GetRotation(), (float)GetTargetBearing((int)x.Character.Xpos, (int)x.Character.Ypos), 180) == true).ToList();
+
+        if (TargetList.Count == 0)
+        {
+            LoadPopup("No Target Available");
+            return;
+        }
+
         Soldier soldier = null;
 
         if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
@@ -126,6 +134,8 @@ public partial class hud : CanvasLayer
 
             for (int i = 0; i < TargetList.Count; i++)
             {
+                //bearing test
+                bool inArc = GameFunctions.IsTargetWithinArc(StoredData.CurrentSoldierNode.Character.GetRotation(), (float)GetTargetBearing(), 180);
                 if (TargetList[i].Character.Name == StoredData.CurrentSoldierNode.Character.CurrentTarget.Name)
                 {
                     oldindex = i;
@@ -320,6 +330,12 @@ public partial class hud : CanvasLayer
     {
         //TODO: Get target bearing
         return GameFunctions.CalculateBearing((int)StoredData.CurrentSoldierNode.Character.Xpos, (int)StoredData.CurrentSoldierNode.Character.Ypos, (int)StoredData.CurrentSoldierNode.Character.CurrentTarget.Xpos, (int)StoredData.CurrentSoldierNode.Character.CurrentTarget.Ypos);
+    }
+
+    public double GetTargetBearing(int TargetX, int TargetY)
+    {
+        //TODO: Get target bearing
+        return GameFunctions.CalculateBearing((int)StoredData.CurrentSoldierNode.Character.Xpos, (int)StoredData.CurrentSoldierNode.Character.Ypos, TargetX, TargetY);
     }
 
     public uint GetRangeToTarget()
