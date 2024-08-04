@@ -42,7 +42,7 @@
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAowHUAAAAIAAAA",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAowGgAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T09:06:23.475Z",
               "IsPinned": true,
@@ -56,8 +56,7 @@
               "ToolTip": "C:\\Users\\User\\AppData\\Local\\SourceServer\\bcf650041d72b588199c3c3fe660b9e21eab1f9c7dd105a5340aa4a9b443bfc5\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "ViewState": "AQIAAEsAAAAAAAAAAAAIwHMAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T18:24:40.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T18:24:40.516Z"
             },
             {
               "$type": "Document",
@@ -69,8 +68,7 @@
               "RelativeToolTip": "..\\FireFightLibrary\\FireFightLibrary\\Functions\\GameFunctions.cs",
               "ViewState": "AQIAADcAAAAAAAAAAAASwFIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-23T18:19:06.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-23T18:19:06.392Z"
             },
             {
               "$type": "Document",
@@ -82,8 +80,7 @@
               "RelativeToolTip": "Units\\Soldier.cs",
               "ViewState": "AQIAABIAAAAAAAAAAAAowEIAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-14T16:03:28.721Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-14T16:03:28.721Z"
             },
             {
               "$type": "Document",
@@ -95,8 +92,7 @@
               "RelativeToolTip": "StoredData.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T18:45:56.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T18:45:56.792Z"
             },
             {
               "$type": "Document",
@@ -108,8 +104,7 @@
               "RelativeToolTip": "main.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAowB8AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-07T11:10:07.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-07T11:10:07.383Z"
             }
           ]
         }
