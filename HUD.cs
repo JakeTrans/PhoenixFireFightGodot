@@ -398,8 +398,8 @@ public partial class hud : CanvasLayer
                 }
             }
 
-            Check for end of game
-            TODO: Check for end of game
+            //Check for end of game
+            //TODO: Check for end of game
             bool GameEnd = DetectGameEnd();
             if (GameEnd == true)
             {
