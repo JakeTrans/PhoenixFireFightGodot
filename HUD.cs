@@ -7,6 +7,9 @@ using System.Security.AccessControl;
 using FireFight.Classes;
 using Azure.Identity;
 using FireFight.Functions;
+using FireFightLibrary.Classes;
+using FireFight.CharacterObjects;
+using System;
 
 public partial class hud : CanvasLayer
 {
@@ -177,8 +180,12 @@ public partial class hud : CanvasLayer
 
     private void _on_end_turn_pressed()
     {
-        //use tblCombatActionsPerImpulse to work things out
+        //EndTurnIGoYouGo();
+        EndTurnImpulseBase();
+    }
 
+    private void EndTurnIGoYouGo()
+    {
         //Take Actions
         System.Diagnostics.Debug.Print("end turn ran");
 
@@ -245,9 +252,9 @@ public partial class hud : CanvasLayer
             ((Sprite2D)soldier.FindChild("Targeted")).Visible = false;
         }
 
-        //set new sprite
+            //set new sprite
 
-        ((Sprite2D)FilteredList[oldindex].FindChild("Selected")).Visible = false;
+            ((Sprite2D)FilteredList[oldindex].FindChild("Selected")).Visible = false;
 
         StoredData.CurrentSoldierNode.Character.Selected = false;
         //Next Characters turn
@@ -274,6 +281,129 @@ public partial class hud : CanvasLayer
                 {
                     ((Sprite2D)soldier.FindChild("Targeted")).Visible = true;
                 }
+            }
+        }
+    }
+
+    private void EndTurnImpulseBase()
+    {
+        Impulses impulses = new Impulses();
+
+        //TODO , has everyone ended turn?
+
+        if (StoredData.Soldiers.Where(x => x.Character.turnTaken == false).Count() > 0)
+        {
+            //Next Solder
+
+            System.Diagnostics.Debug.Print("Next Soldier ran");
+            StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
+
+            StoredData.CurrentSoldierNode.GlobalRotationDegrees = StoredData.CurrentSoldierNode.Character.GetRotation();
+
+            StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
+
+            List<Soldier> FilteredList = StoredData.Soldiers.Where(x => x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
+
+            int oldindex = -1;
+            for (int i = 0; i < FilteredList.Count; i++)
+            {
+                if (FilteredList[i].Character.Name == StoredData.CurrentSoldierNode.Character.Name)
+                {
+                    oldindex = i;
+                    break;
+                }
+            }
+
+            //Clear targetted sprite
+
+            foreach (Soldier soldier in StoredData.Soldiers)
+            {
+                ((Sprite2D)soldier.FindChild("Selected")).Visible = false;
+                ((Sprite2D)soldier.FindChild("Targeted")).Visible = false;
+            }
+
+                //set new sprite
+
+                ((Sprite2D)FilteredList[oldindex].FindChild("Selected")).Visible = false;
+
+            StoredData.CurrentSoldierNode.Character.Selected = false;
+            //Next Characters turn
+            if (oldindex + 1 < FilteredList.Count)
+            {
+                ((Sprite2D)FilteredList[oldindex + 1].FindChild("Selected")).Visible = true;
+
+                StoredData.CurrentSoldierNode = FilteredList[oldindex + 1];
+                StoredData.CurrentSoldierNode.Character.Selected = true;
+            }
+            else
+            {
+                ((Sprite2D)FilteredList[0].FindChild("Selected")).Visible = true;
+
+                StoredData.CurrentSoldierNode = FilteredList[0];
+                StoredData.CurrentSoldierNode.Character.Selected = true;
+            }
+
+            if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
+            {
+                foreach (Soldier soldier in StoredData.Soldiers)
+                {
+                    if (soldier.Character.Name == StoredData.CurrentSoldierNode.Character.CurrentTarget.Name)
+                    {
+                        ((Sprite2D)soldier.FindChild("Targeted")).Visible = true;
+                    }
+                }
+            }
+        }
+        else
+        {
+            System.Diagnostics.Debug.Print("end turn ran");
+            //Gather actions
+
+            foreach (Soldier Unit in StoredData.Soldiers)
+            {
+                impulses.AddActionsToImpulse(Unit.Character);
+            }
+            impulses.SortAllImpulseListByINTSkill();
+
+            //run impulse in order
+
+            //Take Actions
+
+            foreach (ActionsPossible action in StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken)
+            {
+                System.Diagnostics.Debug.Print(action.ToString());
+
+                if (action == ActionsPossible.FireSingle || action == ActionsPossible.FireBurst)
+                {
+                    DamageResult Result = StoredData.CurrentSoldierNode.Character.DoAction(action);
+                    if (Result != null)
+                    {
+                        if (Result.Disabling == false)
+                        {
+                            LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount);
+                        }
+                        else
+                        {
+                            LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount + " was disabling");
+                        }
+                    }
+                    else
+                    {
+                        LoadPopup("Shot Taken - Missed");
+                    }
+                }
+                else
+                {
+                    StoredData.CurrentSoldierNode.Character.DoAction(action);
+                }
+            }
+
+            Check for end of game
+            TODO: Check for end of game
+            bool GameEnd = DetectGameEnd();
+            if (GameEnd == true)
+            {
+                LoadPopup("Game Over");
             }
         }
     }
