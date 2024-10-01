@@ -297,63 +297,6 @@ public partial class hud : CanvasLayer
             //Next Solder
 
             System.Diagnostics.Debug.Print("Next Soldier ran");
-            StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
-
-            StoredData.CurrentSoldierNode.GlobalRotationDegrees = StoredData.CurrentSoldierNode.Character.GetRotation();
-
-            StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
-
-            List<Soldier> FilteredList = StoredData.Soldiers.Where(x => x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
-
-            int oldindex = -1;
-            for (int i = 0; i < FilteredList.Count; i++)
-            {
-                if (FilteredList[i].Character.Name == StoredData.CurrentSoldierNode.Character.Name)
-                {
-                    oldindex = i;
-                    break;
-                }
-            }
-
-            //Clear targetted sprite
-
-            foreach (Soldier soldier in StoredData.Soldiers)
-            {
-                ((Sprite2D)soldier.FindChild("Selected")).Visible = false;
-                ((Sprite2D)soldier.FindChild("Targeted")).Visible = false;
-            }
-
-                //set new sprite
-
-                ((Sprite2D)FilteredList[oldindex].FindChild("Selected")).Visible = false;
-
-            StoredData.CurrentSoldierNode.Character.Selected = false;
-            //Next Characters turn
-            if (oldindex + 1 < FilteredList.Count)
-            {
-                ((Sprite2D)FilteredList[oldindex + 1].FindChild("Selected")).Visible = true;
-
-                StoredData.CurrentSoldierNode = FilteredList[oldindex + 1];
-                StoredData.CurrentSoldierNode.Character.Selected = true;
-            }
-            else
-            {
-                ((Sprite2D)FilteredList[0].FindChild("Selected")).Visible = true;
-
-                StoredData.CurrentSoldierNode = FilteredList[0];
-                StoredData.CurrentSoldierNode.Character.Selected = true;
-            }
-
-            if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
-            {
-                foreach (Soldier soldier in StoredData.Soldiers)
-                {
-                    if (soldier.Character.Name == StoredData.CurrentSoldierNode.Character.CurrentTarget.Name)
-                    {
-                        ((Sprite2D)soldier.FindChild("Targeted")).Visible = true;
-                    }
-                }
-            }
         }
         else
         {
@@ -401,6 +344,11 @@ public partial class hud : CanvasLayer
                     Impulse.Character.DoAction(action);
                 }
             }
+            foreach (Soldier soldier in StoredData.Soldiers)
+            {
+                soldier.Character.turnTaken = false;
+                soldier.Character.ActionsForTurn.ActionsTaken.Clear();
+            }
 
             //Check for end of game
             //TODO: Check for end of game
@@ -408,6 +356,64 @@ public partial class hud : CanvasLayer
             if (GameEnd == true)
             {
                 LoadPopup("Game Over");
+            }
+        }
+
+        StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
+
+        StoredData.CurrentSoldierNode.GlobalRotationDegrees = StoredData.CurrentSoldierNode.Character.GetRotation();
+
+        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
+
+        List<Soldier> FilteredList = StoredData.Soldiers.Where(x => x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
+
+        int oldindex = -1;
+        for (int i = 0; i < FilteredList.Count; i++)
+        {
+            if (FilteredList[i].Character.Name == StoredData.CurrentSoldierNode.Character.Name)
+            {
+                oldindex = i;
+                break;
+            }
+        }
+
+        //Clear targetted sprite
+
+        foreach (Soldier soldier in StoredData.Soldiers)
+        {
+            ((Sprite2D)soldier.FindChild("Selected")).Visible = false;
+            ((Sprite2D)soldier.FindChild("Targeted")).Visible = false;
+        }
+
+                //set new sprite
+
+                ((Sprite2D)FilteredList[oldindex].FindChild("Selected")).Visible = false;
+
+        StoredData.CurrentSoldierNode.Character.Selected = false;
+        //Next Characters turn
+        if (oldindex + 1 < FilteredList.Count)
+        {
+            ((Sprite2D)FilteredList[oldindex + 1].FindChild("Selected")).Visible = true;
+
+            StoredData.CurrentSoldierNode = FilteredList[oldindex + 1];
+            StoredData.CurrentSoldierNode.Character.Selected = true;
+        }
+        else
+        {
+            ((Sprite2D)FilteredList[0].FindChild("Selected")).Visible = true;
+
+            StoredData.CurrentSoldierNode = FilteredList[0];
+            StoredData.CurrentSoldierNode.Character.Selected = true;
+        }
+
+        if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
+        {
+            foreach (Soldier soldier in StoredData.Soldiers)
+            {
+                if (soldier.Character.Name == StoredData.CurrentSoldierNode.Character.CurrentTarget.Name)
+                {
+                    ((Sprite2D)soldier.FindChild("Targeted")).Visible = true;
+                }
             }
         }
     }

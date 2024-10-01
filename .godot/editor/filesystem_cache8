@@ -1,6 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726412661
-hud.cs::CSharpScript::-1::1725799408::0::1::::<>CanvasLayer<>::
+::res://::1727794323
+HUD.cs::CSharpScript::-1::1727794262::0::1::::<><>::
 hud.tscn::PackedScene::469172386270659287::1725799426::0::1::::<><>::res://hud.cs
 icon.svg::CompressedTexture2D::8888523223347771293::1717093081::1717330905::1::::<><>::
 main.cs::CSharpScript::-1::1721559082::0::1::::<>Node<>::
@@ -14,7 +14,7 @@ backgrounddetailed1.png::CompressedTexture2D::1231263005715712502::1725799497::1
 Planks.jpg::CompressedTexture2D::4239021356951885687::1720104161::1720104161::1::::<><>::
 ::res://Data/::1725799497
 ::res://FireFightLibrary/::1722775330
-FireFightLibrary.deps.json::JSON::-1::1721758210::0::1::::<><>::
+FireFightLibrary.deps.json::JSON::-1::1727708185::0::1::::<><>::
 ::res://Properties/::1717937522
 launchSettings.json::JSON::-1::1717937811::0::1::::<><>::
 ::res://Sprites/::1721559082
