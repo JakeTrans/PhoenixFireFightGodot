@@ -10,6 +10,7 @@ using FireFight.Functions;
 using FireFightLibrary.Classes;
 using FireFight.CharacterObjects;
 using System;
+using static System.Collections.Specialized.BitVector32;
 
 public partial class hud : CanvasLayer
 {
@@ -290,7 +291,7 @@ public partial class hud : CanvasLayer
         Impulses impulses = new Impulses();
 
         //TODO , has everyone ended turn?
-
+        StoredData.CurrentSoldierNode.Character.turnTaken = true;
         if (StoredData.Soldiers.Where(x => x.Character.turnTaken == false).Count() > 0)
         {
             //Next Solder
@@ -367,15 +368,18 @@ public partial class hud : CanvasLayer
 
             //run impulse in order
 
-            //Take Actions
-
-            foreach (ActionsPossible action in StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken)
+            //Bundle Impulses
+            List<Impulse> ImpulseAction = impulses.ImpulseList1.Concat(impulses.ImpulseList2).Concat(impulses.ImpulseList3).Concat(impulses.ImpulseList4).ToList();
+            //Run Actions
+            foreach (Impulse Impulse in ImpulseAction)
             {
+                ActionsPossible action = Impulse.Action;
+
                 System.Diagnostics.Debug.Print(action.ToString());
 
                 if (action == ActionsPossible.FireSingle || action == ActionsPossible.FireBurst)
                 {
-                    DamageResult Result = StoredData.CurrentSoldierNode.Character.DoAction(action);
+                    DamageResult Result = Impulse.Character.DoAction(action);
                     if (Result != null)
                     {
                         if (Result.Disabling == false)
@@ -394,7 +398,7 @@ public partial class hud : CanvasLayer
                 }
                 else
                 {
-                    StoredData.CurrentSoldierNode.Character.DoAction(action);
+                    Impulse.Character.DoAction(action);
                 }
             }
 
