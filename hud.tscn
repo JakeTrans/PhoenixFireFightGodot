@@ -160,9 +160,9 @@ text = "CW
 "
 
 [node name="WeaponName" type="RichTextLabel" parent="."]
-offset_left = 446.0
+offset_left = 440.0
 offset_top = 820.0
-offset_right = 566.0
+offset_right = 560.0
 offset_bottom = 860.0
 text = "Weapon Name
 "
@@ -206,6 +206,34 @@ offset_bottom = 939.0
 size_flags_horizontal = 8
 text = "Range
 "
+
+[node name="Actions" type="RichTextLabel" parent="."]
+offset_left = 440.0
+offset_top = 918.0
+offset_right = 500.0
+offset_bottom = 958.0
+text = "Actions"
+
+[node name="ActionCount" type="RichTextLabel" parent="."]
+offset_left = 508.0
+offset_top = 918.0
+offset_right = 568.0
+offset_bottom = 958.0
+text = "0"
+
+[node name="ActionsTaken" type="RichTextLabel" parent="."]
+offset_left = 540.0
+offset_top = 918.0
+offset_right = 600.0
+offset_bottom = 958.0
+text = "Taken"
+
+[node name="ActionsTakenCount" type="RichTextLabel" parent="."]
+offset_left = 595.0
+offset_top = 918.0
+offset_right = 655.0
+offset_bottom = 958.0
+text = "0"
 
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
