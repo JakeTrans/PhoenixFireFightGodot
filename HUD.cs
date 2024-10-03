@@ -437,7 +437,16 @@ public partial class hud : CanvasLayer
         ActionCount.Text = StoredData.CurrentSoldierNode.Character.CombatAction.ToString();
 
         RichTextLabel ActionsTakenCount = (RichTextLabel)GetNode("ActionsTakenCount");
-        ActionsTakenCount.Text = (StoredData.CurrentSoldierNode.Character.CombatAction - StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Count).ToString();
+        ActionsTakenCount.Text = (StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Count).ToString();
+
+        if (StoredData.CurrentSoldierNode.Character.CombatAction == StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Count())
+        {
+            SetUIState(true);
+        }
+        else
+        {
+            SetUIState(false);
+        }
 
         if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
         {
@@ -449,6 +458,24 @@ public partial class hud : CanvasLayer
             BearingText.Text = "Bearing: No Target Selected";
             RangeText.Text = "Range: No Target Selected";
         }
+    }
+
+    private void SetUIState(bool Disabled)
+    {
+        ((Button)GetNode("NW")).Disabled = Disabled;
+        ((Button)GetNode("W")).Disabled = Disabled;
+        ((Button)GetNode("SW")).Disabled = Disabled;
+        ((Button)GetNode("S")).Disabled = Disabled;
+        ((Button)GetNode("SE")).Disabled = Disabled;
+        ((Button)GetNode("E")).Disabled = Disabled;
+        ((Button)GetNode("NE")).Disabled = Disabled;
+        ((Button)GetNode("N")).Disabled = Disabled;
+        ((Button)GetNode("Fire")).Disabled = Disabled;
+        ((Button)GetNode("Reload")).Disabled = Disabled;
+        ((Button)GetNode("Target")).Disabled = Disabled;
+        ((Button)GetNode("Aim")).Disabled = Disabled;
+        ((Button)GetNode("Anti-Clockwise")).Disabled = Disabled;
+        ((Button)GetNode("Clockwise")).Disabled = Disabled;
     }
 
     public void LoadPopup(string PopupText)
