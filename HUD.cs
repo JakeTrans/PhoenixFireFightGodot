@@ -343,6 +343,12 @@ public partial class hud : CanvasLayer
                 {
                     Impulse.Character.DoAction(action);
                 }
+
+                Soldier CurrentSoldierNode = StoredData.Soldiers.Where(x => x.Character.Name == Impulse.Character.Name).FirstOrDefault();
+
+                CurrentSoldierNode.GlobalPosition = new Vector2(CurrentSoldierNode.Character.Xpos, CurrentSoldierNode.Character.Ypos);
+
+                CurrentSoldierNode.GlobalRotationDegrees = CurrentSoldierNode.Character.GetRotation();
             }
             foreach (Soldier soldier in StoredData.Soldiers)
             {
@@ -358,12 +364,6 @@ public partial class hud : CanvasLayer
                 LoadPopup("Game Over");
             }
         }
-
-        StoredData.CurrentSoldierNode.GlobalPosition = new Vector2(StoredData.CurrentSoldierNode.Character.Xpos, StoredData.CurrentSoldierNode.Character.Ypos);
-
-        StoredData.CurrentSoldierNode.GlobalRotationDegrees = StoredData.CurrentSoldierNode.Character.GetRotation();
-
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
 
         List<Soldier> FilteredList = StoredData.Soldiers.Where(x => x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
 
