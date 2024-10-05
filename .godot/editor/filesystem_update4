@@ -5,3 +5,4 @@ res://Units/Soldier.tscn
 res://Units/Soldier.cs
 res://main.cs
 res://PopupScene.cs
+res://background.tscn
