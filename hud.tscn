@@ -160,24 +160,24 @@ text = "CW
 "
 
 [node name="WeaponName" type="RichTextLabel" parent="."]
-offset_left = 440.0
+offset_left = 562.0
 offset_top = 820.0
-offset_right = 560.0
+offset_right = 682.0
 offset_bottom = 860.0
 text = "Weapon Name
 "
 
 [node name="Ammo" type="RichTextLabel" parent="."]
-offset_left = 440.0
+offset_left = 562.0
 offset_top = 870.0
-offset_right = 500.0
+offset_right = 622.0
 offset_bottom = 910.0
 text = "Ammo"
 
 [node name="AmmoCount" type="RichTextLabel" parent="."]
-offset_left = 508.0
+offset_left = 630.0
 offset_top = 870.0
-offset_right = 568.0
+offset_right = 690.0
 offset_bottom = 910.0
 text = "0"
 
@@ -208,32 +208,41 @@ text = "Range
 "
 
 [node name="Actions" type="RichTextLabel" parent="."]
-offset_left = 440.0
+offset_left = 562.0
 offset_top = 920.0
-offset_right = 500.0
+offset_right = 622.0
 offset_bottom = 960.0
 text = "Actions"
 
 [node name="ActionCount" type="RichTextLabel" parent="."]
-offset_left = 508.0
+offset_left = 630.0
 offset_top = 920.0
-offset_right = 568.0
+offset_right = 690.0
 offset_bottom = 960.0
 text = "0"
 
 [node name="ActionsTaken" type="RichTextLabel" parent="."]
-offset_left = 540.0
+offset_left = 662.0
 offset_top = 920.0
-offset_right = 600.0
+offset_right = 722.0
 offset_bottom = 960.0
 text = "Taken"
 
 [node name="ActionsTakenCount" type="RichTextLabel" parent="."]
-offset_left = 595.0
+offset_left = 717.0
 offset_top = 920.0
-offset_right = 655.0
+offset_right = 777.0
 offset_bottom = 960.0
 text = "0"
+
+[node name="Undo" type="Button" parent="."]
+offset_left = 434.0
+offset_top = 920.0
+offset_right = 534.0
+offset_bottom = 960.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Undo"
 
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
@@ -250,3 +259,4 @@ text = "0"
 [connection signal="pressed" from="EndTurn" to="." method="_on_end_turn_pressed"]
 [connection signal="pressed" from="Anti-Clockwise" to="." method="_on_anti_clockwise_pressed"]
 [connection signal="pressed" from="Clockwise" to="." method="_on_clockwise_pressed"]
+[connection signal="pressed" from="Undo" to="." method="_on_undo_pressed"]

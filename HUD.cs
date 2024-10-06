@@ -374,6 +374,7 @@ public partial class hud : CanvasLayer
 		((Button)GetNode("Aim")).Disabled = Disabled;
 		((Button)GetNode("Anti-Clockwise")).Disabled = Disabled;
 		((Button)GetNode("Clockwise")).Disabled = Disabled;
+		((Button)GetNode("Undo")).Disabled = Disabled;
 	}
 
 	public void LoadPopup(string PopupText)
@@ -420,5 +421,12 @@ public partial class hud : CanvasLayer
 		//TODO: Get Range to target
 
 		return GameFunctions.RangeFinder(StoredData.CurrentSoldierNode.Character, StoredData.CurrentSoldierNode.Character.CurrentTarget, StoredData.CurrentSoldierNode.Character.MapScale);
+	}
+
+	private void _on_undo_pressed()
+	{
+		// Replace with function body.
+		System.Diagnostics.Debug.Print("Undo");
+		StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
 	}
 }

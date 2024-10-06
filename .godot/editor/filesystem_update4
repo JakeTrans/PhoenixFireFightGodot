@@ -1,8 +1,8 @@
-res://Main.tscn
 res://hud.cs
-res://main.cs
 res://Units/Soldier.tscn
 res://background.tscn
+res://hud.tscn
 res://ViewPoint.cs
 res://PopupScene.cs
 res://Units/Soldier.cs
+res://main.cs
