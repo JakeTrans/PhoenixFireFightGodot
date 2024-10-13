@@ -227,16 +227,24 @@ public partial class hud : CanvasLayer
                         {
                             if (Result.Disabling == false)
                             {
-                                LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount);
+                                // LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount);
                             }
                             else
                             {
-                                LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount + " was disabling");
+                                // LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount + " was disabling");
                             }
                         }
                         else
                         {
-                            LoadPopup("Shot Taken - Missed");
+                            // LoadPopup("Shot Taken - Missed");
+                        }
+
+                        foreach (Soldier soldier in StoredData.Soldiers)
+                        {
+                            if (soldier.Character.KnockedOut == true)
+                            {
+                                5((Sprite2D)soldier.FindChild("Downed")).Visible = true;
+                            }
                         }
                     }
                     else

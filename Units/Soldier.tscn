@@ -1,4 +1,4 @@
-[gd_scene load_steps=69 format=3 uid="uid://b0rvygqiyb8il"]
+[gd_scene load_steps=70 format=3 uid="uid://b0rvygqiyb8il"]
 
 [ext_resource type="Script" path="res://Units/Soldier.cs" id="1_g5xxt"]
 [ext_resource type="Texture2D" uid="uid://bayhawh7npnno" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_0_rotated.png" id="2_nawfp"]
@@ -66,6 +66,7 @@
 [ext_resource type="Texture2D" uid="uid://c3fqd0v4w1dit" path="res://Sprites/SoldierRifle/SoldierShoot/survivor-shoot_rifle_0_rotated.png" id="64_njq1k"]
 [ext_resource type="Texture2D" uid="uid://sgqielu7ilwv" path="res://Sprites/SoldierRifle/SoldierShoot/survivor-shoot_rifle_1_rotated.png" id="65_od8t8"]
 [ext_resource type="Texture2D" uid="uid://d0yrgqre07pw5" path="res://Sprites/SoldierRifle/SoldierShoot/survivor-shoot_rifle_2_rotated.png" id="66_cn626"]
+[ext_resource type="Texture2D" uid="uid://dj72o4utv73cm" path="res://Sprites/Soldier/SoliderDowned.png" id="67_0j3ed"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_whumy"]
 animations = [{
@@ -284,6 +285,10 @@ size = Vector2(33, 46)
 
 [node name="Soldier" type="Area2D"]
 script = ExtResource("1_g5xxt")
+
+[node name="Downed" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("67_0j3ed")
 
 [node name="Targeted" type="Sprite2D" parent="."]
 visible = false
