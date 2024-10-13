@@ -244,6 +244,25 @@ size_flags_horizontal = 8
 size_flags_vertical = 8
 text = "Undo"
 
+[node name="GameOver" type="RichTextLabel" parent="."]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -197.0
+offset_top = -23.5
+offset_right = 197.0
+offset_bottom = 23.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]Game Over [/center]"
+fit_content = true
+
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
 [connection signal="pressed" from="SW" to="." method="_on_sw_pressed"]

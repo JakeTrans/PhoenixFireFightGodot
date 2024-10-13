@@ -1,7 +1,5 @@
-res://hud.cs
-res://Units/Soldier.tscn
-res://background.tscn
 res://hud.tscn
+res://hud.cs
 res://ViewPoint.cs
 res://PopupScene.cs
 res://Units/Soldier.cs

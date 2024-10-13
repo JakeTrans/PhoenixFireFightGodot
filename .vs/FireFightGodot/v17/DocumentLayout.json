@@ -22,8 +22,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -32,10 +36,9 @@
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AgIAAJsBAAAAAAAAAAAYwK0BAABUAAAAAAAAAA==",
+              "ViewState": "AgIAAPEAAAAAAAAAAAAhwAsBAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T09:06:23.475Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-10-13T13:29:36.629Z",
               "EditorCaption": ""
             },
             {
@@ -61,7 +64,8 @@
               "RelativeToolTip": "ViewPoint.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T15:18:46.078Z"
+              "WhenOpened": "2024-10-05T15:18:46.078Z",
+              "EditorCaption": ""
             }
           ]
         }
