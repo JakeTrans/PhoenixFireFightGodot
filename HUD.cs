@@ -1,17 +1,11 @@
-using FireFightGodot;
-using Godot;
-using System.Linq;
-using System.Collections.Generic;
-using System.Transactions;
-using System.Security.AccessControl;
 using FireFight.Classes;
-using Azure.Identity;
 using FireFight.Functions;
+using FireFightGodot;
 using FireFightLibrary.Classes;
-using FireFight.CharacterObjects;
+using Godot;
 using System;
-using static System.Collections.Specialized.BitVector32;
-using System.Diagnostics.CodeAnalysis;
+using System.Collections.Generic;
+using System.Linq;
 
 public partial class hud : CanvasLayer
 {
@@ -30,74 +24,59 @@ public partial class hud : CanvasLayer
 
     private void _on_n_pressed()
     {
-        System.Diagnostics.Debug.Print("n");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveN);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved North");
+        AddandLogActions(ActionsPossible.MoveN);
+    }
+
+    private static void AddandLogActions(ActionsPossible actionsPossible)
+    {
+        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(actionsPossible);
+        System.Diagnostics.Debug.Print(actionsPossible.ToString());
+        StoredData.CurrentSoldierNode.MessageLog.Add(actionsPossible.ToString());
     }
 
     private void _on_nw_pressed()
     {
-        System.Diagnostics.Debug.Print("nw");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveNW);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved North West");
+        AddandLogActions(ActionsPossible.MoveNW);
     }
 
     private void _on_ne_pressed()
     {
-        System.Diagnostics.Debug.Print("ne");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveNE);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved North East");
+        AddandLogActions(ActionsPossible.MoveNE);
     }
 
     private void _on_e_pressed()
     {
-        System.Diagnostics.Debug.Print("e");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveE);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved East");
+        AddandLogActions(ActionsPossible.MoveE);
     }
 
     private void _on_se_pressed()
     {
-        System.Diagnostics.Debug.Print("se");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveSE);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved South East");
+        AddandLogActions(ActionsPossible.MoveSE);
     }
 
     private void _on_s_pressed()
     {
-        System.Diagnostics.Debug.Print("s");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveS);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved South");
+        AddandLogActions(ActionsPossible.MoveS);
     }
 
     private void _on_sw_pressed()
     {
-        System.Diagnostics.Debug.Print("sw");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveSW);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved South West");
+        AddandLogActions(ActionsPossible.MoveSW);
     }
 
     private void _on_w_pressed()
     {
-        System.Diagnostics.Debug.Print("w");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveW);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Moved West");
+        AddandLogActions(ActionsPossible.MoveW);
     }
 
     private void _on_anti_clockwise_pressed()
     {
-        // Replace with function body.
-        System.Diagnostics.Debug.Print("ACW");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.RotateAntiClockWise);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Rotated Anti Clockwise");
+        AddandLogActions(ActionsPossible.RotateAntiClockWise);
     }
 
     private void _on_clockwise_pressed()
     {
-        // Replace with function body.
-        System.Diagnostics.Debug.Print("CS");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.RotateClockwise);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Rotated Clockwise");
+        AddandLogActions(ActionsPossible.RotateClockwise);
     }
 
     private void _on_fire_pressed()
@@ -109,17 +88,12 @@ public partial class hud : CanvasLayer
             return;
         }
 
-        System.Diagnostics.Debug.Print("fire");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.FireSingle);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Fire Single");
+        AddandLogActions(ActionsPossible.FireSingle);
     }
 
     private void _on_reload_pressed()
     {
-        //LoadPopup("Reload");
-        System.Diagnostics.Debug.Print("reload");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.Reload);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Reload");
+        AddandLogActions(ActionsPossible.Reload);
     }
 
     private void _on_target_pressed()
@@ -186,9 +160,7 @@ public partial class hud : CanvasLayer
 
     private void _on_aim_pressed()
     {
-        System.Diagnostics.Debug.Print("aim");
-        StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(ActionsPossible.Aim);
-        StoredData.CurrentSoldierNode.MessageLog.Add("Aim");
+        AddandLogActions(ActionsPossible.Aim);
     }
 
     private void _on_end_turn_pressed()
