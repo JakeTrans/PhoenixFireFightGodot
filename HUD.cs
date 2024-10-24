@@ -32,48 +32,56 @@ public partial class hud : CanvasLayer
     {
         System.Diagnostics.Debug.Print("n");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveN);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved North");
     }
 
     private void _on_nw_pressed()
     {
         System.Diagnostics.Debug.Print("nw");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveNW);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved North West");
     }
 
     private void _on_ne_pressed()
     {
         System.Diagnostics.Debug.Print("ne");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveNE);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved North East");
     }
 
     private void _on_e_pressed()
     {
         System.Diagnostics.Debug.Print("e");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveE);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved East");
     }
 
     private void _on_se_pressed()
     {
         System.Diagnostics.Debug.Print("se");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveSE);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved South East");
     }
 
     private void _on_s_pressed()
     {
         System.Diagnostics.Debug.Print("s");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveS);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved South");
     }
 
     private void _on_sw_pressed()
     {
         System.Diagnostics.Debug.Print("sw");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveSW);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved South West");
     }
 
     private void _on_w_pressed()
     {
         System.Diagnostics.Debug.Print("w");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.MoveW);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Moved West");
     }
 
     private void _on_anti_clockwise_pressed()
@@ -81,6 +89,7 @@ public partial class hud : CanvasLayer
         // Replace with function body.
         System.Diagnostics.Debug.Print("ACW");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.RotateAntiClockWise);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Rotated Anti Clockwise");
     }
 
     private void _on_clockwise_pressed()
@@ -88,6 +97,7 @@ public partial class hud : CanvasLayer
         // Replace with function body.
         System.Diagnostics.Debug.Print("CS");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.RotateClockwise);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Rotated Clockwise");
     }
 
     private void _on_fire_pressed()
@@ -101,6 +111,7 @@ public partial class hud : CanvasLayer
 
         System.Diagnostics.Debug.Print("fire");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.FireSingle);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Fire Single");
     }
 
     private void _on_reload_pressed()
@@ -108,12 +119,12 @@ public partial class hud : CanvasLayer
         //LoadPopup("Reload");
         System.Diagnostics.Debug.Print("reload");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(FireFight.Classes.ActionsPossible.Reload);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Reload");
     }
 
     private void _on_target_pressed()
     {
         System.Diagnostics.Debug.Print("target");
-
         TargetList = StoredData.Soldiers.Where(x => x.Character.Selected == false && x.Character.KnockedOut == false).OrderBy(x => x.Character.INTSkillFactor).ToList();
 
         TargetList = TargetList.Where(x => GameFunctions.IsTargetWithinArc(StoredData.CurrentSoldierNode.Character.GetRotation(), (float)GetTargetBearing((int)x.Character.Xpos, (int)x.Character.Ypos), 180) == true).ToList();
@@ -177,10 +188,12 @@ public partial class hud : CanvasLayer
     {
         System.Diagnostics.Debug.Print("aim");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(ActionsPossible.Aim);
+        StoredData.CurrentSoldierNode.MessageLog.Add("Aim");
     }
 
     private void _on_end_turn_pressed()
     {
+        StoredData.CurrentSoldierNode.MessageLog.Clear();
         EndTurnImpulseBase();
     }
 
@@ -190,6 +203,7 @@ public partial class hud : CanvasLayer
 
         //TODO , has everyone ended turn?
         StoredData.CurrentSoldierNode.Character.turnTaken = true;
+        StoredData.CurrentSoldierNode.MessageLog.Clear();
         if (StoredData.Soldiers.Where(x => x.Character.turnTaken == false).Count() > 0)
         {
             //Next Solder
@@ -243,7 +257,7 @@ public partial class hud : CanvasLayer
                         {
                             if (soldier.Character.KnockedOut == true)
                             {
-                                5((Sprite2D)soldier.FindChild("Downed")).Visible = true;
+                                ((Sprite2D)soldier.FindChild("Downed")).Visible = true;
                             }
                         }
                     }

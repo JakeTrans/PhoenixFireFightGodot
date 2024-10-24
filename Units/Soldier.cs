@@ -2,68 +2,87 @@ using FireFight.CharacterObjects;
 using FireFight.Classes;
 using Godot;
 using System;
+using System.Collections.Generic;
 
 public partial class Soldier : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
-	public Character Character { get; set; }
+    // Called when the node enters the scene tree for the first time.
+    public Character Character { get; set; }
 
-	private AnimatedSprite2D _animatedSprite;
+    private AnimatedSprite2D _animatedSprite;
 
-	private Animation ActiveAnimation;
+    private Animation ActiveAnimation;
 
-	private enum Animation
-	{
-		Idle,
-		Melee,
-		Move,
-		reload,
-		Shoot
-	}
+    public List<string> MessageLog;
 
-	public override void _Ready()
-	{
-		Random rnd = new Random();
-		Character = new Character(7, 0);
-		Character.Name = rnd.Next(1, 10000).ToString();
-		Character.Xpos = (uint)Position.X;
-		Character.Ypos = (uint)Position.Y;
-		Character.CurrentTarget = null;
-		Character.MapScale = 100;
-		Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
-		Character.RangedWeapons[0].Equipped = true;
-		Character.CurrentAimAmount = 20;
-		ActiveAnimation = Animation.Idle;
+    private enum Animation
+    {
+        Idle,
+        Melee,
+        Move,
+        reload,
+        Shoot
+    }
 
-		_animatedSprite = GetNode<AnimatedSprite2D>("SoldierspriteAnimated");
-	}
+    public override void _Ready()
+    {
+        MessageLog = new List<string>();
+        Random rnd = new Random();
+        Character = new Character(7, 0);
+        Character.Name = rnd.Next(1, 10000).ToString();
+        Character.Xpos = (uint)Position.X;
+        Character.Ypos = (uint)Position.Y;
+        Character.CurrentTarget = null;
+        Character.MapScale = 100;
+        Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
+        Character.RangedWeapons[0].Equipped = true;
+        Character.CurrentAimAmount = 20;
+        ActiveAnimation = Animation.Idle;
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-		//Running animation for Idle
-		//_animatedSprite.Play("Idle");
-		switch (ActiveAnimation)
-		{
-			case Animation.Idle:
-				_animatedSprite.Play("Idle");
-				break;
+        _animatedSprite = GetNode<AnimatedSprite2D>("SoldierspriteAnimated");
+    }
 
-			case Animation.Melee:
-				_animatedSprite.Play("Melee");
-				break;
+    // Called every frame. 'delta' is the elapsed time since the previous frame.
+    public override void _Process(double delta)
+    {
+        //Running animation for Idle
+        //_animatedSprite.Play("Idle");
+        switch (ActiveAnimation)
+        {
+            case Animation.Idle:
+                _animatedSprite.Play("Idle");
+                break;
 
-			case Animation.Move:
-				_animatedSprite.Play("Move");
-				break;
+            case Animation.Melee:
+                _animatedSprite.Play("Melee");
+                break;
 
-			case Animation.reload:
-				_animatedSprite.Play("reload");
-				break;
+            case Animation.Move:
+                _animatedSprite.Play("Move");
+                break;
 
-			case Animation.Shoot:
-				_animatedSprite.Play("Shoot");
-				break;
-		}
-	}
+            case Animation.reload:
+                _animatedSprite.Play("reload");
+                break;
+
+            case Animation.Shoot:
+                _animatedSprite.Play("Shoot");
+                break;
+        }
+        SetMessages();
+    }
+
+    public void SetMessages()
+    {
+        string Logtext = "";
+        RichTextLabel MessageNode = (RichTextLabel)GetNode("Messages");
+
+        foreach (string Message in MessageLog)
+        {
+            Logtext = Logtext + Message + "\n";
+        }
+        MessageNode.Text = Logtext;
+
+        MessageNode.Visible = true;
+    }
 }

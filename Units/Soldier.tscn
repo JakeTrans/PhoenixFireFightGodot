@@ -281,7 +281,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t5a8p"]
-size = Vector2(33, 46)
+size = Vector2(84, 136)
 
 [node name="Soldier" type="Area2D"]
 script = ExtResource("1_g5xxt")
@@ -306,5 +306,12 @@ sprite_frames = SubResource("SpriteFrames_whumy")
 animation = &"Shoot"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -1)
+position = Vector2(5, -2)
 shape = SubResource("RectangleShape2D_t5a8p")
+
+[node name="Messages" type="RichTextLabel" parent="."]
+offset_left = -142.0
+offset_top = -95.0
+offset_right = -40.0
+offset_bottom = 6.0
+text = "No Messages"
