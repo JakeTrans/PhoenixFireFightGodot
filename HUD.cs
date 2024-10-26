@@ -22,16 +22,16 @@ public partial class hud : CanvasLayer
         setupHud();
     }
 
-    private void _on_n_pressed()
-    {
-        AddandLogActions(ActionsPossible.MoveN);
-    }
-
-    private static void AddandLogActions(ActionsPossible actionsPossible)
+    private void AddandLogActions(ActionsPossible actionsPossible)
     {
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(actionsPossible);
         System.Diagnostics.Debug.Print(actionsPossible.ToString());
         StoredData.CurrentSoldierNode.MessageLog.Add(actionsPossible.ToString());
+    }
+
+    private void _on_n_pressed()
+    {
+        AddandLogActions(ActionsPossible.MoveN);
     }
 
     private void _on_nw_pressed()
@@ -208,21 +208,24 @@ public partial class hud : CanvasLayer
 
                     if (action == ActionsPossible.FireSingle || action == ActionsPossible.FireBurst)
                     {
+                        Soldier CurrenttargetNode = StoredData.Soldiers.Where(x => x.Character.Name == Impulse.Character.CurrentTarget.Name).FirstOrDefault();
+
                         DamageResult Result = Impulse.Character.DoAction(action);
+
                         if (Result != null)
                         {
                             if (Result.Disabling == false)
                             {
-                                // LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount);
+                                CurrenttargetNode.MessageLog.Add("Shot Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount);
                             }
                             else
                             {
-                                // LoadPopup("Shot Taken -  Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount + " was disabling");
+                                CurrenttargetNode.MessageLog.Add("Shot Hit the for " + Result.HitLocation.Trim() + " for " + Result.DamageAmount);
                             }
                         }
                         else
                         {
-                            // LoadPopup("Shot Taken - Missed");
+                            CurrenttargetNode.MessageLog.Add("Shot Taken Missing");
                         }
 
                         foreach (Soldier soldier in StoredData.Soldiers)
@@ -256,8 +259,6 @@ public partial class hud : CanvasLayer
             int? GameEnd = DetectGameEnd();
             if (GameEnd != null)
             {
-                //LoadPopup("Game Over");
-
                 RichTextLabel GameOver = (RichTextLabel)GetNode("GameOver");
                 GameOver.Text = "Game Over. Side " + GameEnd + " has won!";
 
