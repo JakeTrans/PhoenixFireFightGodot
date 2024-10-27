@@ -81,13 +81,6 @@ public partial class hud : CanvasLayer
 
     private void _on_fire_pressed()
     {
-        if (StoredData.CurrentSoldierNode.Character.CurrentTarget == null)
-        {
-            System.Diagnostics.Debug.Print("no target");
-            LoadPopup("No Target Selected");
-            return;
-        }
-
         AddandLogActions(ActionsPossible.FireSingle);
     }
 
@@ -105,7 +98,7 @@ public partial class hud : CanvasLayer
 
         if (TargetList.Count == 0)
         {
-            LoadPopup("No Target Available");
+            StoredData.CurrentSoldierNode.MessageLog.Add("No Target Available");
             return;
         }
 
@@ -383,16 +376,6 @@ public partial class hud : CanvasLayer
         ((Button)GetNode("Anti-Clockwise")).Disabled = Disabled;
         ((Button)GetNode("Clockwise")).Disabled = Disabled;
         ((Button)GetNode("Undo")).Disabled = Disabled;
-    }
-
-    public void LoadPopup(string PopupText)
-    {
-        // Load and show the PopupScene
-        Node Popupscene = ResourceLoader.Load<PackedScene>("res://PopupScene.tscn").Instantiate();
-
-        ((Label)Popupscene.GetChild(1)).Text = PopupText;
-
-        AddChild(Popupscene);
     }
 
     public int? DetectGameEnd()
