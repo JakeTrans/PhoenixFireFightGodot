@@ -350,11 +350,19 @@ public partial class hud : CanvasLayer
         {
             BearingText.Text = "Bearing: " + GetTargetBearing().ToString();
             RangeText.Text = "Range: " + GetRangeToTarget().ToString();
+
+            ((Button)GetNode("Aim")).Disabled = false;
+
+            ((Button)GetNode("Fire")).Disabled = false;
         }
         else
         {
             BearingText.Text = "Bearing: No Target Selected";
             RangeText.Text = "Range: No Target Selected";
+
+            ((Button)GetNode("Aim")).Disabled = true;
+
+            ((Button)GetNode("Fire")).Disabled = true;
         }
     }
 
