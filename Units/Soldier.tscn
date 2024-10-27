@@ -310,8 +310,8 @@ position = Vector2(5, -2)
 shape = SubResource("RectangleShape2D_t5a8p")
 
 [node name="Messages" type="RichTextLabel" parent="."]
-offset_left = -142.0
+offset_left = -204.0
 offset_top = -95.0
 offset_right = -40.0
-offset_bottom = 6.0
+offset_bottom = 68.0
 text = "No Messages"

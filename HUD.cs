@@ -339,23 +339,26 @@ public partial class hud : CanvasLayer
             SetUIState(false);
         }
 
-        if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
+        if (StoredData.CurrentSoldierNode.Character.CombatAction != StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Count())
         {
-            BearingText.Text = "Bearing: " + GetTargetBearing().ToString();
-            RangeText.Text = "Range: " + GetRangeToTarget().ToString();
+            if (StoredData.CurrentSoldierNode.Character.CurrentTarget != null)
+            {
+                BearingText.Text = "Bearing: " + GetTargetBearing().ToString();
+                RangeText.Text = "Range: " + GetRangeToTarget().ToString();
 
-            ((Button)GetNode("Aim")).Disabled = false;
+                ((Button)GetNode("Aim")).Disabled = false;
 
-            ((Button)GetNode("Fire")).Disabled = false;
-        }
-        else
-        {
-            BearingText.Text = "Bearing: No Target Selected";
-            RangeText.Text = "Range: No Target Selected";
+                ((Button)GetNode("Fire")).Disabled = false;
+            }
+            else
+            {
+                BearingText.Text = "Bearing: No Target Selected";
+                RangeText.Text = "Range: No Target Selected";
 
-            ((Button)GetNode("Aim")).Disabled = true;
+                ((Button)GetNode("Aim")).Disabled = true;
 
-            ((Button)GetNode("Fire")).Disabled = true;
+                ((Button)GetNode("Fire")).Disabled = true;
+            }
         }
     }
 
@@ -369,13 +372,13 @@ public partial class hud : CanvasLayer
         ((Button)GetNode("E")).Disabled = Disabled;
         ((Button)GetNode("NE")).Disabled = Disabled;
         ((Button)GetNode("N")).Disabled = Disabled;
-        ((Button)GetNode("Fire")).Disabled = Disabled;
         ((Button)GetNode("Reload")).Disabled = Disabled;
         ((Button)GetNode("Target")).Disabled = Disabled;
-        ((Button)GetNode("Aim")).Disabled = Disabled;
         ((Button)GetNode("Anti-Clockwise")).Disabled = Disabled;
         ((Button)GetNode("Clockwise")).Disabled = Disabled;
         ((Button)GetNode("Undo")).Disabled = Disabled;
+        ((Button)GetNode("Aim")).Disabled = Disabled;
+        ((Button)GetNode("Fire")).Disabled = Disabled;
     }
 
     public int? DetectGameEnd()
@@ -419,5 +422,6 @@ public partial class hud : CanvasLayer
         // Replace with function body.
         System.Diagnostics.Debug.Print("Undo");
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Clear();
+        StoredData.CurrentSoldierNode.MessageLog.Clear();
     }
 }

@@ -2,5 +2,4 @@ res://Units/Soldier.tscn
 res://hud.cs
 res://Units/Soldier.cs
 res://ViewPoint.cs
-res://PopupScene.cs
 res://main.cs
