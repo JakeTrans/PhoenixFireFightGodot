@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://0tkrp3w4qcgr"]
+
+[ext_resource type="Texture2D" uid="uid://oycj0674mx6j" path="res://Sprites/BlockingPlaceholder.png" id="1_kbwsg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_6fw8k"]
+size = Vector2(80, 135)
+
+[node name="BlockingTerrain" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, -3.5)
+shape = SubResource("RectangleShape2D_6fw8k")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(4.49996, -3.00002)
+scale = Vector2(0.790001, 1.34)
+texture = ExtResource("1_kbwsg")

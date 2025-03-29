@@ -1,14 +1,14 @@
-RichTextLabel
+CollisionShape2D
+Area2D
 Sprite2D
+RichTextLabel
 Camera2D
 TextureRect
 VScrollBar
 HScrollBar
 ScrollContainer
 AnimatedSprite2D
-CollisionShape2D
 Button
 Label
 Panel
 VBoxContainer
-Area2D
