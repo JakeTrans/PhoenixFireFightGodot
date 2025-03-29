@@ -22,7 +22,7 @@ namespace FireFightGodot.Terrain
         Blocking
     }
 
-    internal partial class BaseTerrain : Node2D
+    public partial class BaseTerrain : Node2D
     {
         public BaseTerrain(Height height, LineofSight lineOfSight)
         {

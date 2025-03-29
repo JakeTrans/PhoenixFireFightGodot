@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://0tkrp3w4qcgr"]
+[gd_scene load_steps=4 format=3 uid="uid://0tkrp3w4qcgr"]
 
 [ext_resource type="Texture2D" uid="uid://oycj0674mx6j" path="res://Sprites/BlockingPlaceholder.png" id="1_kbwsg"]
+[ext_resource type="Script" path="res://Terrain/BlockingTerrain.cs" id="1_kd41d"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6fw8k"]
 size = Vector2(80, 135)
 
 [node name="BlockingTerrain" type="Area2D"]
+script = ExtResource("1_kd41d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(4, -3.5)
