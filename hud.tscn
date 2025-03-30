@@ -263,6 +263,16 @@ bbcode_enabled = true
 text = "[center]Game Over [/center]"
 fit_content = true
 
+[node name="Lineofsight" type="Button" parent="."]
+offset_left = 435.0
+offset_top = 870.0
+offset_right = 529.0
+offset_bottom = 910.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+text = "Los check
+"
+
 [connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
 [connection signal="pressed" from="W" to="." method="_on_w_pressed"]
 [connection signal="pressed" from="SW" to="." method="_on_sw_pressed"]
@@ -279,3 +289,4 @@ fit_content = true
 [connection signal="pressed" from="Anti-Clockwise" to="." method="_on_anti_clockwise_pressed"]
 [connection signal="pressed" from="Clockwise" to="." method="_on_clockwise_pressed"]
 [connection signal="pressed" from="Undo" to="." method="_on_undo_pressed"]
+[connection signal="pressed" from="Lineofsight" to="." method="_on_lineofsight_pressed"]

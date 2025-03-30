@@ -8,29 +8,29 @@ using System.Threading.Tasks;
 
 namespace FireFightGodot.Terrain
 {
-    public enum Height
-    {
-        Low,
-        Medium,
-        High,
-        Blocking
-    }
+	public enum Height
+	{
+		Low,
+		Medium,
+		High,
+		Blocking
+	}
 
-    public enum LineofSight
-    {
-        NonBlocking,
-        Blocking
-    }
+	public enum LineofSight
+	{
+		NonBlocking,
+		Blocking
+	}
 
-    public partial class BaseTerrain : Node2D
-    {
-        public BaseTerrain(Height height, LineofSight lineOfSight)
-        {
-            this.height = height;
-            this.lineOfSight = lineOfSight;
-        }
+	public partial class BaseTerrain : Node2D
+	{
+		public BaseTerrain(Height height, LineofSight lineOfSight)
+		{
+			this.height = height;
+			this.lineOfSight = lineOfSight;
+		}
 
-        public Height height { get; set; }
-        public LineofSight lineOfSight { get; set; }
-    }
+		public Height height { get; set; }
+		public LineofSight lineOfSight { get; set; }
+	}
 }
