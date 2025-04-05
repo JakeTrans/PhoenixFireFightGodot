@@ -1,7 +1,3 @@
-res://Units/Soldier.tscn
+res://Terrain/Wall/Wall.tscn
 res://hud.cs
-res://ViewPoint.cs
-res://Terrain/BaseTerrain.cs
-res://Terrain/BlockingTerrain.cs
-res://main.cs
-res://Units/Soldier.cs
+res://Units/Soldier.tscn
