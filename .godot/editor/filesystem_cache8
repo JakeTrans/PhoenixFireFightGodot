@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1743874534
+::res://::1744048214
 background.tscn::PackedScene::731914002603500505::1728229257::0::1::::<><>::uid://rsoysogrs6a1::::res://Backgrounds/backgrounddetailed1.png
 export_presets.cfg::TextFile::-1::1730049630::0::1::::<><>::
-hud.cs::CSharpScript::-1::1743874273::0::1::::<>CanvasLayer<>::
+hud.cs::CSharpScript::-1::1743875068::0::1::::<>CanvasLayer<>::
 hud.tscn::PackedScene::469172386270659287::1743262918::0::1::::<><>::res://hud.cs
 icon.svg::CompressedTexture2D::8888523223347771293::1717093081::1717330905::1::::<><>::
 main.cs::CSharpScript::-1::1743858013::0::1::::<>Node<>::
-Main.tscn::PackedScene::8055529885168468178::1743874521::0::1::::<><>::res://main.cs<>uid://kosrtj68rca0::::res://background.tscn<>uid://gxjg27soashb::::res://hud.tscn<>res://ViewPoint.cs<>uid://dctuov4u6q2vc::::res://Sprites/Walls/hyptosis_tile-art-batch-1.png
+Main.tscn::PackedScene::8055529885168468178::1743875125::0::1::::<><>::res://main.cs<>uid://kosrtj68rca0::::res://background.tscn<>uid://gxjg27soashb::::res://hud.tscn<>res://ViewPoint.cs<>uid://dctuov4u6q2vc::::res://Sprites/Walls/hyptosis_tile-art-batch-1.png
 Notes.txt::TextFile::-1::1718130991::0::1::::<><>::
 StoredData.cs::CSharpScript::-1::1721559082::0::1::::<><>::
 ViewPoint.cs::CSharpScript::-1::1730049630::0::1::::<>Camera2D<>::
