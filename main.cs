@@ -16,7 +16,7 @@ public partial class main : Node
 	public override void _Ready()
 	{
 		CreateSoliders();
-		CreateTerrain();
+		//CreateTerrain();
 		camera = GetNode<Camera2D>("MainViewPoint");
 	}
 

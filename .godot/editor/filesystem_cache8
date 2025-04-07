@@ -1,12 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1744048214
+::res://::1744049128
 background.tscn::PackedScene::731914002603500505::1728229257::0::1::::<><>::uid://rsoysogrs6a1::::res://Backgrounds/backgrounddetailed1.png
 export_presets.cfg::TextFile::-1::1730049630::0::1::::<><>::
-hud.cs::CSharpScript::-1::1743875068::0::1::::<>CanvasLayer<>::
+hud.cs::CSharpScript::-1::1744048588::0::1::::<>CanvasLayer<>::
 hud.tscn::PackedScene::469172386270659287::1743262918::0::1::::<><>::res://hud.cs
 icon.svg::CompressedTexture2D::8888523223347771293::1717093081::1717330905::1::::<><>::
 main.cs::CSharpScript::-1::1743858013::0::1::::<>Node<>::
-Main.tscn::PackedScene::8055529885168468178::1743875125::0::1::::<><>::res://main.cs<>uid://kosrtj68rca0::::res://background.tscn<>uid://gxjg27soashb::::res://hud.tscn<>res://ViewPoint.cs<>uid://dctuov4u6q2vc::::res://Sprites/Walls/hyptosis_tile-art-batch-1.png
+Main.tscn::PackedScene::8055529885168468178::1744049127::0::1::::<><>::res://main.cs<>uid://kosrtj68rca0::::res://background.tscn<>uid://gxjg27soashb::::res://hud.tscn<>res://ViewPoint.cs<>uid://dctuov4u6q2vc::::res://Sprites/Terrain/hyptosis_tile-art-batch-1.png
 Notes.txt::TextFile::-1::1718130991::0::1::::<><>::
 StoredData.cs::CSharpScript::-1::1721559082::0::1::::<><>::
 ViewPoint.cs::CSharpScript::-1::1730049630::0::1::::<>Camera2D<>::
@@ -18,7 +18,7 @@ Planks.jpg::CompressedTexture2D::4239021356951885687::1720104161::1720104161::1:
 FireFightLibrary.deps.json::JSON::-1::1727948524::0::1::::<><>::
 ::res://Properties/::1717937522
 launchSettings.json::JSON::-1::1717937811::0::1::::<><>::
-::res://Sprites/::1743857941
+::res://Sprites/::1744049127
 BlockingPlaceholder.png::CompressedTexture2D::1032327745626442099::1743256607::1743256612::1::::<><>::
 ::res://Sprites/Soldier/::1730049630
 SelectedSprite.png::CompressedTexture2D::4002292541668035724::1721559082::1721559082::1::::<><>::
@@ -93,8 +93,8 @@ survivor-reload_rifle_19_rotated.png::CompressedTexture2D::2531267582113619070::
 survivor-shoot_rifle_0_rotated.png::CompressedTexture2D::6749429054160084543::1721559082::1721559082::1::::<><>::
 survivor-shoot_rifle_1_rotated.png::CompressedTexture2D::1276771438282492461::1721559082::1721559082::1::::<><>::
 survivor-shoot_rifle_2_rotated.png::CompressedTexture2D::8964571978619709974::1721559082::1721559082::1::::<><>::
-::res://Sprites/Walls/::1743858613
-hyptosis_tile-art-batch-1.png::CompressedTexture2D::7340103405392978280::1743858612::1743858613::1::::<><>::
+::res://Sprites/Terrain/::1743858613
+hyptosis_tile-art-batch-1.png::CompressedTexture2D::7340103405392978280::1743858612::1744049129::1::::<><>::
 ::res://Terrain/::1743858000
 BaseTerrain.cs::CSharpScript::-1::1743262407::0::1::::<>Node2D<>::
 BlockingTerrain.cs::CSharpScript::-1::1743262407::0::1::::<>Node2D<>::
