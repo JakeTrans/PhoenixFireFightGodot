@@ -99,10 +99,10 @@ public partial class Soldier : Node2D
 
 		if ((GodotObject)result["collider"] == Target)
 		{
-			GD.Print("u wot m8");
+			GD.Print("true");
 			return true;
 		}
-
+		GD.Print("true");
 		return false;
 	}
 }
