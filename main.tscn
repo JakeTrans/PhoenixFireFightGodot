@@ -1,7 +1,6 @@
-[gd_scene load_steps=8 format=3 uid="uid://dm1fnuywas1p3"]
+[gd_scene load_steps=7 format=3 uid="uid://dm1fnuywas1p3"]
 
 [ext_resource type="Script" path="res://main.cs" id="1_2c156"]
-[ext_resource type="PackedScene" uid="uid://kosrtj68rca0" path="res://background.tscn" id="3_31o05"]
 [ext_resource type="PackedScene" uid="uid://gxjg27soashb" path="res://hud.tscn" id="3_vl2m3"]
 [ext_resource type="Script" path="res://ViewPoint.cs" id="4_obbt4"]
 [ext_resource type="Texture2D" uid="uid://dctuov4u6q2vc" path="res://Sprites/Terrain/hyptosis_tile-art-batch-1.png" id="5_syjfy"]
@@ -9356,11 +9355,6 @@ sources/1 = SubResource("TileSetAtlasSource_niyd5")
 
 [node name="Main" type="Node"]
 script = ExtResource("1_2c156")
-
-[node name="Background" parent="." instance=ExtResource("3_31o05")]
-visible = false
-offset_right = 758.4
-offset_bottom = 1020.0
 
 [node name="Ground" type="TileMap" parent="."]
 tile_set = SubResource("TileSet_0fn1s")
