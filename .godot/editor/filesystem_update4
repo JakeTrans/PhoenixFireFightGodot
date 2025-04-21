@@ -1,5 +1,6 @@
-res://main.cs
 res://Main.tscn
 res://hud.cs
-res://ViewPoint.cs
 res://Units/Soldier.cs
+res://Units/Soldier.tscn
+res://ViewPoint.cs
+res://main.cs

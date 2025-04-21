@@ -1,5 +1,6 @@
 using FireFight.CharacterObjects;
 using FireFight.Classes;
+using FireFightGodot;
 using Godot;
 using Godot.Collections;
 using System;
@@ -8,101 +9,105 @@ using System.Linq;
 
 public partial class Soldier : Node2D
 {
-	// Called when the node enters the scene tree for the first time.
-	public Character Character { get; set; }
+    // Called when the node enters the scene tree for the first time.
+    public Character Character { get; set; }
 
-	private AnimatedSprite2D _animatedSprite;
+    public AnimatedSprite2D AnimatedSprite;
 
-	private Animation ActiveAnimation;
+    public Sprite2D GhostSprite;
 
-	public List<string> MessageLog;
+    private Animation ActiveAnimation;
 
-	private enum Animation
-	{
-		Idle,
-		Melee,
-		Move,
-		reload,
-		Shoot
-	}
+    public List<string> MessageLog;
 
-	public override void _Ready()
-	{
-		MessageLog = new List<string>();
-		Random rnd = new Random();
-		Character = new Character(7, 0);
-		Character.Name = rnd.Next(1, 10000).ToString();
-		Character.Xpos = (uint)Position.X;
-		Character.Ypos = (uint)Position.Y;
-		Character.CurrentTarget = null;
-		Character.MapScale = 100;
-		Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
-		Character.RangedWeapons[0].Equipped = true;
-		Character.CurrentAimAmount = 20;
-		ActiveAnimation = Animation.Idle;
+    private enum Animation
+    {
+        Idle,
+        Melee,
+        Move,
+        reload,
+        Shoot
+    }
 
-		_animatedSprite = GetNode<AnimatedSprite2D>("SoldierspriteAnimated");
-	}
+    public override void _Ready()
+    {
+        MessageLog = new List<string>();
+        Random rnd = new Random();
+        Character = new Character(7, 0);
+        Character.Name = rnd.Next(1, 10000).ToString();
+        Character.Xpos = (uint)Position.X;
+        Character.Ypos = (uint)Position.Y;
+        Character.CurrentTarget = null;
+        Character.MapScale = 100;
+        Character.RangedWeapons.Add(new RangedWeapon(1, WeaponType.AssaultRifles));
+        Character.RangedWeapons[0].Equipped = true;
+        Character.CurrentAimAmount = 20;
+        ActiveAnimation = Animation.Idle;
 
-	// Called every frame. 'delta' is the elapsed time since the previous frame.
-	public override void _Process(double delta)
-	{
-		//Running animation for Idle
-		//_animatedSprite.Play("Idle");
-		switch (ActiveAnimation)
-		{
-			case Animation.Idle:
-				_animatedSprite.Play("Idle");
-				break;
+        GhostSprite = GetNode<Sprite2D>("Ghost");
 
-			case Animation.Melee:
-				_animatedSprite.Play("Melee");
-				break;
+        AnimatedSprite = GetNode<AnimatedSprite2D>("SoldierspriteAnimated");
+    }
 
-			case Animation.Move:
-				_animatedSprite.Play("Move");
-				break;
+    // Called every frame. 'delta' is the elapsed time since the previous frame.
+    public override void _Process(double delta)
+    {
+        //Running animation for Idle
+        //_animatedSprite.Play("Idle");
+        switch (ActiveAnimation)
+        {
+            case Animation.Idle:
+                AnimatedSprite.Play("Idle");
+                break;
 
-			case Animation.reload:
-				_animatedSprite.Play("reload");
-				break;
+            case Animation.Melee:
+                AnimatedSprite.Play("Melee");
+                break;
 
-			case Animation.Shoot:
-				_animatedSprite.Play("Shoot");
-				break;
-		}
-		SetMessages();
-	}
+            case Animation.Move:
+                AnimatedSprite.Play("Move");
+                break;
 
-	public void SetMessages()
-	{
-		string Logtext = "";
-		RichTextLabel MessageNode = (RichTextLabel)GetNode("Messages");
+            case Animation.reload:
+                AnimatedSprite.Play("reload");
+                break;
 
-		foreach (string Message in MessageLog)
-		{
-			Logtext = Logtext + Message + "\n";
-		}
-		MessageNode.Text = Logtext;
+            case Animation.Shoot:
+                AnimatedSprite.Play("Shoot");
+                break;
+        }
+        SetMessages();
+    }
 
-		MessageNode.Visible = true;
-	}
+    public void SetMessages()
+    {
+        string Logtext = "";
+        RichTextLabel MessageNode = (RichTextLabel)GetNode("Messages");
 
-	public bool CheckLOS(Node2D Target)
-	{
-		var spaceState = GetWorld2D().DirectSpaceState;
-		var query = PhysicsRayQueryParameters2D.Create(this.Position, Target.Position);
-		query.CollideWithAreas = true;
-		var result = spaceState.IntersectRay(query);
+        foreach (string Message in MessageLog)
+        {
+            Logtext = Logtext + Message + "\n";
+        }
+        MessageNode.Text = Logtext;
 
-		Object Collider = result["collider"] as Object;
+        MessageNode.Visible = true;
+    }
 
-		if ((GodotObject)result["collider"] == Target)
-		{
-			GD.Print("true");
-			return true;
-		}
-		GD.Print("true");
-		return false;
-	}
+    public bool CheckLOS(Node2D Target)
+    {
+        var spaceState = GetWorld2D().DirectSpaceState;
+        var query = PhysicsRayQueryParameters2D.Create(this.Position, Target.Position);
+        query.CollideWithAreas = true;
+        var result = spaceState.IntersectRay(query);
+
+        Object Collider = result["collider"] as Object;
+
+        if ((GodotObject)result["collider"] == Target)
+        {
+            GD.Print("true");
+            return true;
+        }
+        GD.Print("true");
+        return false;
+    }
 }
