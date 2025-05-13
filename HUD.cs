@@ -452,6 +452,7 @@ public partial class hud : CanvasLayer
     private void GhostFunction(ActionsPossible actionsPossible)
     {
         Sprite2D Ghostimage = StoredData.CurrentSoldierNode.GhostSprite;
+        CollisionShape2D GhostCollisionShape = StoredData.CurrentSoldierNode.GhostCollisionShape;
         Ghostimage.Visible = true;
 
         switch (actionsPossible)
@@ -496,6 +497,8 @@ public partial class hud : CanvasLayer
                 GhostRotatefunction(false);
                 break;
         }
+
+        GhostCollisionShape.Position = Ghostimage.Position;
     }
 
     public GeneralFunctions.CardinalDirectionsSquare Facing { get; set; }

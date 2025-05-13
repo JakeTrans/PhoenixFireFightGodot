@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AgIAAKMAAAAAAAAAAAAlwLYAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAALcBAAAAAAAAAAAEwMkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T17:59:28.864Z",
               "EditorCaption": ""
@@ -47,8 +47,7 @@
               "RelativeToolTip": "main.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-30T15:45:12.567Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-30T15:45:12.567Z"
             },
             {
               "$type": "Document",
@@ -60,8 +59,7 @@
               "RelativeToolTip": "Units\\Soldier.cs",
               "ViewState": "AgIAADIAAAAAAAAAAAAAAEsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-29T14:31:17.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-29T14:31:17.677Z"
             }
           ]
         }

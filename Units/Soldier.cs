@@ -12,6 +12,8 @@ public partial class Soldier : Node2D
     // Called when the node enters the scene tree for the first time.
     public Character Character { get; set; }
 
+    public CollisionShape2D GhostCollisionShape;
+
     public AnimatedSprite2D AnimatedSprite;
 
     public Sprite2D GhostSprite;
@@ -47,6 +49,8 @@ public partial class Soldier : Node2D
         GhostSprite = GetNode<Sprite2D>("Ghost");
 
         AnimatedSprite = GetNode<AnimatedSprite2D>("SoldierspriteAnimated");
+
+        GhostCollisionShape = GetNode<CollisionShape2D>("CollisionShape2DGhost");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
