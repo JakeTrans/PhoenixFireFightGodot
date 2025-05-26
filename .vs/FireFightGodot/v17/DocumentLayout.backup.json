@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Git\\FireFightGodot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|solutionrelative:units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{218B594D-6C2A-42C8-8FA2-90D06A5C5B3F}|FireFightGodot.csproj|d:\\git\\firefightgodot\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,17 +22,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "hud.cs",
               "DocumentMoniker": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeDocumentMoniker": "hud.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\hud.cs",
               "RelativeToolTip": "hud.cs",
-              "ViewState": "AgIAAIUBAAAAAAAAAAAEwJcBAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAALsBAAAAAAAAAAAiwNcBAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T17:59:28.864Z",
               "EditorCaption": ""
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Soldier.cs",
               "DocumentMoniker": "D:\\Git\\FireFightGodot\\Units\\Soldier.cs",
               "RelativeDocumentMoniker": "Units\\Soldier.cs",
               "ToolTip": "D:\\Git\\FireFightGodot\\Units\\Soldier.cs",
               "RelativeToolTip": "Units\\Soldier.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAswDQAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-29T14:31:17.677Z",
               "EditorCaption": ""

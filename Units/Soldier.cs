@@ -114,4 +114,11 @@ public partial class Soldier : Node2D
 		GD.Print("true");
 		return false;
 	}
+	private void _on_area_2d_body_entered(Node2D body)
+	{
+		GD.Print("ghost collision");
+	}
+
 }
+
+
