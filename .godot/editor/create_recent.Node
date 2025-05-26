@@ -1,8 +1,9 @@
+Area2D
+Node2D
 CollisionShape2D
 Sprite2D
 TileMap
 RayCast2D
-Area2D
 RichTextLabel
 Camera2D
 TextureRect
@@ -11,4 +12,3 @@ HScrollBar
 ScrollContainer
 AnimatedSprite2D
 Button
-Label
