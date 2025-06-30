@@ -1779,11 +1779,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Git\\FireFightGodot\\FireFightGodot.csproj",
-      "projectName": "FireFightGodot",
-      "projectPath": "D:\\Git\\FireFightGodot\\FireFightGodot.csproj",
+      "projectUniqueName": "D:\\Git\\PhoenixFireFightGodot\\PhoenixFireFightGodot\\PhoenixFireFightGodot.csproj",
+      "projectName": "PhoenixFireFightGodot",
+      "projectPath": "D:\\Git\\PhoenixFireFightGodot\\PhoenixFireFightGodot\\PhoenixFireFightGodot.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Git\\FireFightGodot\\.godot\\mono\\temp\\obj\\",
+      "outputPath": "D:\\Git\\PhoenixFireFightGodot\\PhoenixFireFightGodot\\.godot\\mono\\temp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1857,7 +1857,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

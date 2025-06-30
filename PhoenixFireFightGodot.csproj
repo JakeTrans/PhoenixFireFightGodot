@@ -15,5 +15,8 @@
     <Reference Include="FireFightLibrary">
       <HintPath>FireFightLibrary\FireFightLibrary.dll</HintPath>
     </Reference>
+    <Reference Include="PhoenixFireFightLibrary">
+      <HintPath>PhoenixFireFightLibrary\PhoenixFireFightLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>
