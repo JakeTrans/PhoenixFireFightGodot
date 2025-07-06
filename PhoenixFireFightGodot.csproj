@@ -12,9 +12,6 @@
     <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.1" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="FireFightLibrary">
-      <HintPath>FireFightLibrary\FireFightLibrary.dll</HintPath>
-    </Reference>
     <Reference Include="PhoenixFireFightLibrary">
       <HintPath>PhoenixFireFightLibrary\PhoenixFireFightLibrary.dll</HintPath>
     </Reference>

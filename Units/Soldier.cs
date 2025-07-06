@@ -1,5 +1,5 @@
-using FireFight.CharacterObjects;
-using FireFight.Classes;
+using PhoenixFireFight.CharacterObjects;
+using PhoenixFireFight.Classes;
 using FireFightGodot;
 using Godot;
 using Godot.Collections;
