@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\FireFightGodot\\FireFightGodot.csproj": {}
+    "D:\\Git\\PhoenixFireFightGodot\\FireFightGodot.csproj": {}
   },
   "projects": {
-    "D:\\Git\\FireFightGodot\\FireFightGodot.csproj": {
+    "D:\\Git\\PhoenixFireFightGodot\\FireFightGodot.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\FireFightGodot\\FireFightGodot.csproj",
+        "projectUniqueName": "D:\\Git\\PhoenixFireFightGodot\\FireFightGodot.csproj",
         "projectName": "FireFightGodot",
-        "projectPath": "D:\\Git\\FireFightGodot\\FireFightGodot.csproj",
+        "projectPath": "D:\\Git\\PhoenixFireFightGodot\\FireFightGodot.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\FireFightGodot\\.godot\\mono\\temp\\obj\\",
+        "outputPath": "D:\\Git\\PhoenixFireFightGodot\\.godot\\mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -85,7 +85,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
