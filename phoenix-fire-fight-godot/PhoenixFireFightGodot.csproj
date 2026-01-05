@@ -10,4 +10,10 @@
       <Private>True</Private>
     </Reference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Units\Soldier.tscn" />
+  </ItemGroup>
 </Project>

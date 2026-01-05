@@ -1,3 +1,208 @@
-[gd_scene format=3 uid="uid://dfqwvccomqfca"]
+[gd_scene load_steps=2 format=3 uid="uid://dfqwvccomqfca"]
 
-[node name="HUD" type="Node2D"]
+[ext_resource type="Script" uid="uid://b6xccan7tn17n" path="res://Hud.cs" id="1_k5de2"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_k5de2")
+
+[node name="NW" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 820.0
+offset_right = 90.0
+offset_bottom = 860.0
+text = "NW"
+
+[node name="W" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 870.0
+offset_right = 90.0
+offset_bottom = 910.0
+text = "W"
+
+[node name="SW" type="Button" parent="."]
+offset_left = 50.0
+offset_top = 920.0
+offset_right = 90.0
+offset_bottom = 960.0
+text = "SW"
+
+[node name="N" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 820.0
+offset_right = 140.0
+offset_bottom = 860.0
+text = "N"
+
+[node name="S" type="Button" parent="."]
+offset_left = 100.0
+offset_top = 920.0
+offset_right = 144.0
+offset_bottom = 960.0
+text = "ACW"
+
+[node name="E" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 870.0
+offset_right = 190.0
+offset_bottom = 910.0
+text = "E"
+
+[node name="SE" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 920.0
+offset_right = 190.0
+offset_bottom = 960.0
+text = "SE"
+
+[node name="NE" type="Button" parent="."]
+offset_left = 150.0
+offset_top = 820.0
+offset_right = 190.0
+offset_bottom = 860.0
+text = "NE"
+
+[node name="Fire" type="Button" parent="."]
+offset_left = 300.0
+offset_top = 820.0
+offset_right = 340.0
+offset_bottom = 860.0
+text = "Fire"
+
+[node name="Reload" type="Button" parent="."]
+offset_left = 350.0
+offset_top = 820.0
+offset_right = 420.0
+offset_bottom = 860.0
+text = "ACW"
+
+[node name="Target" type="Button" parent="."]
+offset_left = 350.0
+offset_top = 870.0
+offset_right = 420.0
+offset_bottom = 910.0
+text = "Target"
+
+[node name="Aim" type="Button" parent="."]
+offset_left = 300.0
+offset_top = 870.0
+offset_right = 340.0
+offset_bottom = 910.0
+text = "Aim"
+
+[node name="EndTurn" type="Button" parent="."]
+offset_left = 300.0
+offset_top = 920.0
+offset_right = 420.0
+offset_bottom = 960.0
+text = "End Turn"
+
+[node name="Anti-Clockwise" type="Button" parent="."]
+offset_top = 820.0
+offset_right = 44.0
+offset_bottom = 860.0
+text = "ACW"
+
+[node name="Clockwise" type="Button" parent="."]
+offset_left = 200.0
+offset_top = 820.0
+offset_right = 240.0
+offset_bottom = 860.0
+text = "CW"
+
+[node name="Undo" type="Button" parent="."]
+offset_left = 434.0
+offset_top = 920.0
+offset_right = 534.0
+offset_bottom = 960.0
+text = "Undo"
+
+[node name="Lineofsight" type="Button" parent="."]
+offset_left = 435.0
+offset_top = 869.0
+offset_right = 526.0
+offset_bottom = 909.0
+text = "LosCheck"
+
+[node name="CurrentUnit" type="RichTextLabel" parent="."]
+offset_left = 1049.0
+offset_top = 28.0
+offset_right = 1249.0
+offset_bottom = 75.0
+text = "Character Name"
+
+[node name="WeaponName" type="RichTextLabel" parent="."]
+offset_left = 560.0
+offset_top = 820.0
+offset_right = 680.0
+offset_bottom = 860.0
+text = "Weapon Name"
+
+[node name="Ammo" type="RichTextLabel" parent="."]
+offset_left = 560.0
+offset_top = 870.0
+offset_right = 620.0
+offset_bottom = 910.0
+text = "Ammo"
+
+[node name="AmmoCount" type="RichTextLabel" parent="."]
+offset_left = 630.0
+offset_top = 870.0
+offset_right = 690.0
+offset_bottom = 910.0
+text = "0"
+
+[node name="TargetDetails" type="RichTextLabel" parent="."]
+offset_left = 1000.0
+offset_top = 820.0
+offset_right = 1120.0
+offset_bottom = 860.0
+text = "Target Details"
+
+[node name="Bearing" type="RichTextLabel" parent="."]
+offset_left = 1000.0
+offset_top = 870.0
+offset_right = 1265.0
+offset_bottom = 910.0
+text = "Bearing"
+
+[node name="Range" type="RichTextLabel" parent="."]
+offset_left = 1000.0
+offset_top = 920.0
+offset_right = 1270.0
+offset_bottom = 960.0
+text = "Range"
+
+[node name="Actions" type="RichTextLabel" parent="."]
+offset_left = 560.0
+offset_top = 920.0
+offset_right = 625.0
+offset_bottom = 960.0
+text = "Actions"
+
+[node name="ActionsCount" type="RichTextLabel" parent="."]
+offset_left = 630.0
+offset_top = 920.0
+offset_right = 690.0
+offset_bottom = 960.0
+text = "0"
+
+[node name="ActionsTaken" type="RichTextLabel" parent="."]
+offset_left = 660.0
+offset_top = 920.0
+offset_right = 720.0
+offset_bottom = 960.0
+text = "Taken"
+
+[node name="ActionsTakenCount" type="RichTextLabel" parent="."]
+offset_left = 720.0
+offset_top = 920.0
+offset_right = 780.0
+offset_bottom = 960.0
+text = "0"
+
+[node name="GameOver" type="RichTextLabel" parent="."]
+offset_left = 450.0
+offset_top = 450.0
+offset_right = 850.0
+offset_bottom = 510.0
+text = "[center]Game Over [/center]"
