@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\storeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:storeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Soldier.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Units\\Soldier.cs",
               "RelativeDocumentMoniker": "Units\\Soldier.cs",
@@ -38,12 +38,11 @@
               "RelativeToolTip": "Units\\Soldier.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T19:43:23.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-05T19:43:23.314Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "StoredData.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\StoredData.cs",
               "RelativeDocumentMoniker": "StoredData.cs",
@@ -55,15 +54,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Hud.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
               "RelativeDocumentMoniker": "Hud.cs",
               "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
               "RelativeToolTip": "Hud.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGABAAAAAAAAAAAiwDECAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T19:38:19.356Z"
+              "WhenOpened": "2026-01-05T19:38:19.356Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "Main.cs",
               "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Main.cs",
               "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAuwEwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-04T16:20:53.837Z",
               "EditorCaption": ""
