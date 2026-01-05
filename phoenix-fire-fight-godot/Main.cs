@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-public partial class Main : CanvasLayer
+public partial class Main : Node
 {
     private List<Soldier> TargetList;
 
