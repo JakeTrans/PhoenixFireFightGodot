@@ -1,3 +1,4 @@
+using FireFight.CharacterObjects;
 using FireFight.Classes;
 using FireFight.Functions;
 using FireFightLibrary.Classes;
@@ -18,7 +19,7 @@ public partial class Main : Node
     {
         CreateSoliders();
         //CreateTerrain();
-        camera = GetNode<Camera2D>("MainViewPoint");
+        // camera = GetNode<Camera2D>("MainViewPoint");
     }
 
     private void CreateSoliders()
@@ -30,6 +31,7 @@ public partial class Main : Node
             AddChild(CurrentSoldier);
 
             Soldier SoldierInstance = (Soldier)CurrentSoldier;
+
             StoredData.Soldiers.Add(SoldierInstance);
             SoldierInstance.Character.Xpos = (200 * i);
 
