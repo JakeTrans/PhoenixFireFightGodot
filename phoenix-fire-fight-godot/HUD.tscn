@@ -201,8 +201,27 @@ offset_bottom = 960.0
 text = "0"
 
 [node name="GameOver" type="RichTextLabel" parent="."]
+visible = false
 offset_left = 450.0
 offset_top = 450.0
 offset_right = 850.0
 offset_bottom = 510.0
 text = "[center]Game Over [/center]"
+
+[connection signal="pressed" from="NW" to="." method="_on_nw_pressed"]
+[connection signal="pressed" from="W" to="." method="_on_w_pressed"]
+[connection signal="pressed" from="SW" to="." method="_on_sw_pressed"]
+[connection signal="pressed" from="N" to="." method="_on_n_pressed"]
+[connection signal="pressed" from="S" to="." method="_on_s_pressed"]
+[connection signal="pressed" from="E" to="." method="_on_e_pressed"]
+[connection signal="pressed" from="SE" to="." method="_on_se_pressed"]
+[connection signal="pressed" from="NE" to="." method="_on_ne_pressed"]
+[connection signal="pressed" from="Fire" to="." method="_on_fire_pressed"]
+[connection signal="pressed" from="Reload" to="." method="_on_reload_pressed"]
+[connection signal="pressed" from="Target" to="." method="_on_target_pressed"]
+[connection signal="pressed" from="Aim" to="." method="_on_aim_pressed"]
+[connection signal="pressed" from="EndTurn" to="." method="_on_end_turn_pressed"]
+[connection signal="pressed" from="Anti-Clockwise" to="." method="_on_anti_clockwise_pressed"]
+[connection signal="pressed" from="Clockwise" to="." method="_on_clockwise_pressed"]
+[connection signal="pressed" from="Undo" to="." method="_on_undo_pressed"]
+[connection signal="pressed" from="Lineofsight" to="." method="_on_lineofsight_pressed"]
