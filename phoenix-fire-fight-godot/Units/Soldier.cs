@@ -50,7 +50,7 @@ public partial class Soldier : Node2D
 
         AnimatedSprite = GetNode<AnimatedSprite2D>("SoldierspriteAnimated");
 
-        GhostCollisionShape = GetNode<CollisionShape2D>("CollisionShape2DGhost");
+        GhostCollisionShape = GhostSprite.GetNode<Area2D>("Area2D").GetNode<CollisionShape2D>("CollisionShape2DGhost");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.

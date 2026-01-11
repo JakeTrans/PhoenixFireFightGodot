@@ -3,26 +3,23 @@
   "WorkspaceRootPath": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\dddae4988e2a8433cfc51f18b15a0a7d96f50bda29a8c554638ebf32b5399c41\\CSharpInstanceBridge.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\291907e43c012ee9aade8177e89dd9834ca30141511881781cb364b7d02c9de0\\GodotObject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\fa4df14f3aa8c3fd505eb86296505d48b0aeb5e55093c21cd97d2aed36c21a87\\Node.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\storeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:storeddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,46 +29,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CSharpInstanceBridge.cs",
-              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\dddae4988e2a8433cfc51f18b15a0a7d96f50bda29a8c554638ebf32b5399c41\\CSharpInstanceBridge.cs",
-              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\dddae4988e2a8433cfc51f18b15a0a7d96f50bda29a8c554638ebf32b5399c41\\CSharpInstanceBridge.cs [Read Only]",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAmwB0AAAACAAAAAQAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Node.cs",
+              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\fa4df14f3aa8c3fd505eb86296505d48b0aeb5e55093c21cd97d2aed36c21a87\\Node.cs",
+              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\fa4df14f3aa8c3fd505eb86296505d48b0aeb5e55093c21cd97d2aed36c21a87\\Node.cs",
+              "ViewState": "AgIAANMEAAAAAAAAAAAmwOUEAAACAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T14:43:09.503Z",
-              "EditorCaption": " [Read Only]"
+              "WhenOpened": "2026-01-11T15:28:37.152Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GodotObject.cs",
-              "DocumentMoniker": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\291907e43c012ee9aade8177e89dd9834ca30141511881781cb364b7d02c9de0\\GodotObject.cs",
-              "ToolTip": "C:\\Users\\User\\AppData\\Local\\Temp\\.vsdbgsrc\\291907e43c012ee9aade8177e89dd9834ca30141511881781cb364b7d02c9de0\\GodotObject.cs [Read Only]",
-              "ViewState": "AgIAADECAAAAAAAAAAAmwEkCAAACAAAAAQAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T14:38:33.652Z",
-              "EditorCaption": " [Read Only]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Soldier.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Units\\Soldier.cs",
               "RelativeDocumentMoniker": "Units\\Soldier.cs",
               "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Units\\Soldier.cs",
               "RelativeToolTip": "Units\\Soldier.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAmwFIAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAcwDQAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T19:43:23.314Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "StoredData.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\StoredData.cs",
               "RelativeDocumentMoniker": "StoredData.cs",
@@ -79,24 +65,25 @@
               "RelativeToolTip": "StoredData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-05T19:40:51.193Z"
+              "WhenOpened": "2026-01-05T19:40:51.193Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Hud.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
               "RelativeDocumentMoniker": "Hud.cs",
               "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
               "RelativeToolTip": "Hud.cs",
-              "ViewState": "AgIAAE0BAAAAAAAAAAAmwF8BAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAOIBAAAAAAAAAAAmwPMBAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T19:38:19.356Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Main.cs",
               "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
@@ -104,8 +91,7 @@
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAAD0AAAAAAAAAAAAmwE4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T16:20:53.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-04T16:20:53.837Z"
             }
           ]
         }
