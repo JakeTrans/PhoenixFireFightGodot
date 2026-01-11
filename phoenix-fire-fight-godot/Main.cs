@@ -19,7 +19,7 @@ public partial class Main : Node
     {
         CreateSoliders();
         //CreateTerrain();
-        // camera = GetNode<Camera2D>("MainViewPoint");
+        camera = GetNode<Camera2D>("MainViewPoint");
     }
 
     private void CreateSoliders()

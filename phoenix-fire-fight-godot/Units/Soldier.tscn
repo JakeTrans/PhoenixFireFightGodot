@@ -310,7 +310,7 @@ texture = ExtResource("66_xviul")
 visible = false
 texture = ExtResource("67_yrue4")
 
-[node name="Message" type="RichTextLabel" parent="."]
+[node name="Messages" type="RichTextLabel" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
 
