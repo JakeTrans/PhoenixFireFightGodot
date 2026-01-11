@@ -1,10 +1,290 @@
-[gd_scene load_steps=4 format=3 uid="uid://82hy7kfk6ekl"]
+[gd_scene load_steps=72 format=3 uid="uid://82hy7kfk6ekl"]
 
 [ext_resource type="Script" uid="uid://chwqutsfmm8lg" path="res://Units/Soldier.cs" id="1_mbpm8"]
+[ext_resource type="Texture2D" uid="uid://bayhawh7npnno" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_0_rotated.png" id="2_slaun"]
+[ext_resource type="Texture2D" uid="uid://jpa2o4cdincv" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_1_rotated.png" id="3_4ru8i"]
+[ext_resource type="Texture2D" uid="uid://b8cvtciwsib3m" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_2_rotated.png" id="4_ftu45"]
+[ext_resource type="Texture2D" uid="uid://dq085vdvufyd2" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_3_rotated.png" id="5_qginn"]
+[ext_resource type="Texture2D" uid="uid://co12s5h3roehv" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_4_rotated.png" id="6_f1njt"]
+[ext_resource type="Texture2D" uid="uid://ce5sikhp4oxs1" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_5_rotated.png" id="7_xviul"]
+[ext_resource type="Texture2D" uid="uid://vchdsmkb3s1k" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_6_rotated.png" id="8_yrue4"]
+[ext_resource type="Texture2D" uid="uid://b5egtmbimio2t" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_7_rotated.png" id="9_mt42k"]
+[ext_resource type="Texture2D" uid="uid://bxapr0ory5a72" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_8_rotated.png" id="10_pxaan"]
+[ext_resource type="Texture2D" uid="uid://c42bb52r4hi71" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_9_rotated.png" id="11_r23vm"]
+[ext_resource type="Texture2D" uid="uid://cymum1kmbxq0c" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_10_rotated.png" id="12_lhjr3"]
+[ext_resource type="Texture2D" uid="uid://dmyo7mia8ojx5" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_11_rotated.png" id="13_2hd48"]
+[ext_resource type="Texture2D" uid="uid://c2m7ux2nx14jv" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_12_rotated.png" id="14_s0v2m"]
+[ext_resource type="Texture2D" uid="uid://dfi51cpnnyeu4" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_13_rotated.png" id="15_vur18"]
+[ext_resource type="Texture2D" uid="uid://g5e6o68e6wwy" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_14_rotated.png" id="16_g1blf"]
+[ext_resource type="Texture2D" uid="uid://wfes5mntrg7" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_15_rotated.png" id="17_v0vra"]
+[ext_resource type="Texture2D" uid="uid://dg4njfo58v0nd" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_16_rotated.png" id="18_tmtx5"]
+[ext_resource type="Texture2D" uid="uid://bcmkxa5ni5nna" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_17_rotated.png" id="19_dspg4"]
+[ext_resource type="Texture2D" uid="uid://cgaiyhcld80ke" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_18_rotated.png" id="20_gnbnk"]
+[ext_resource type="Texture2D" uid="uid://r1x4h84vg1lt" path="res://Sprites/SoldierRifle/SoldierIdle/survivor-idle_rifle_19_rotated.png" id="21_b6qbr"]
+[ext_resource type="Texture2D" uid="uid://brwj838aqf6hk" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_0_rotated.png" id="22_a2unf"]
+[ext_resource type="Texture2D" uid="uid://o7ss5ds7d6vo" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_1_rotated.png" id="23_nebty"]
+[ext_resource type="Texture2D" uid="uid://drr010704ceeg" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_2_rotated.png" id="24_ghhc8"]
+[ext_resource type="Texture2D" uid="uid://cmuwvcowu51au" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_3_rotated.png" id="25_wdle2"]
+[ext_resource type="Texture2D" uid="uid://oqfwb0qochef" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_4_rotated.png" id="26_mse6x"]
+[ext_resource type="Texture2D" uid="uid://b6yatrcalj14j" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_5_rotated.png" id="27_t2eoe"]
+[ext_resource type="Texture2D" uid="uid://uyauvbnba5fj" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_6_rotated.png" id="28_7trmw"]
+[ext_resource type="Texture2D" uid="uid://bi27ite8i1x4j" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_7_rotated.png" id="29_3aert"]
+[ext_resource type="Texture2D" uid="uid://cxnle3m4wl5xn" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_8_rotated.png" id="30_jlbkh"]
+[ext_resource type="Texture2D" uid="uid://j10gvdeqnq3d" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_9_rotated.png" id="31_p2rvi"]
+[ext_resource type="Texture2D" uid="uid://m1arxkl8lrja" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_10_rotated.png" id="32_patyb"]
+[ext_resource type="Texture2D" uid="uid://drnj327wd7u52" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_11_rotated.png" id="33_yc1dq"]
+[ext_resource type="Texture2D" uid="uid://cuo23n30jddkj" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_12_rotated.png" id="34_8hk2q"]
+[ext_resource type="Texture2D" uid="uid://oc65fxnnvvi4" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_13_rotated.png" id="35_0rxyu"]
+[ext_resource type="Texture2D" uid="uid://bo0us8xsveq5f" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_14_rotated.png" id="36_xgu6r"]
+[ext_resource type="Texture2D" uid="uid://dtwllixfrnd4h" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_15_rotated.png" id="37_0gnkc"]
+[ext_resource type="Texture2D" uid="uid://xtk2jr8ia7bl" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_16_rotated.png" id="38_s5a67"]
+[ext_resource type="Texture2D" uid="uid://dgpopifxajnar" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_17_rotated.png" id="39_0hhao"]
+[ext_resource type="Texture2D" uid="uid://bn4pf5qsh2ohc" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_18_rotated.png" id="40_v0uak"]
+[ext_resource type="Texture2D" uid="uid://cwliyjbx0iopu" path="res://Sprites/SoldierRifle/SoldierMove/survivor-move_rifle_19_rotated.png" id="41_50esu"]
+[ext_resource type="Texture2D" uid="uid://cro1bfmk6hvp3" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_0_rotated.png" id="42_4gt3x"]
+[ext_resource type="Texture2D" uid="uid://cvhrug6qgqmag" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_1_rotated.png" id="43_uh8ul"]
+[ext_resource type="Texture2D" uid="uid://dyq7j5ojjy47v" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_2_rotated.png" id="44_db5w0"]
+[ext_resource type="Texture2D" uid="uid://48tlp0f6k62u" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_3_rotated.png" id="45_t4vax"]
+[ext_resource type="Texture2D" uid="uid://btgrwje0ei305" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_4_rotated.png" id="46_854k4"]
+[ext_resource type="Texture2D" uid="uid://o4w4i235pjeo" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_5_rotated.png" id="47_g6b3q"]
+[ext_resource type="Texture2D" uid="uid://ci0gvp2egald8" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_6_rotated.png" id="48_klvx8"]
+[ext_resource type="Texture2D" uid="uid://dks1d13w2882l" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_7_rotated.png" id="49_s2rj3"]
+[ext_resource type="Texture2D" uid="uid://dpnf75t28n4mp" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_8_rotated.png" id="50_fsk5r"]
+[ext_resource type="Texture2D" uid="uid://dfiwxs75uh5sv" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_9_rotated.png" id="51_0t8qo"]
+[ext_resource type="Texture2D" uid="uid://btm41l3qslpmi" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_10_rotated.png" id="52_54bvt"]
+[ext_resource type="Texture2D" uid="uid://bwjdrwcnuul3i" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_11_rotated.png" id="53_oy8qt"]
+[ext_resource type="Texture2D" uid="uid://5oggg4e7pubb" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_12_rotated.png" id="54_35l66"]
+[ext_resource type="Texture2D" uid="uid://byea2ri2ynk4n" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_13_rotated.png" id="55_jin6h"]
+[ext_resource type="Texture2D" uid="uid://d1rfw4436q2w" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_14_rotated.png" id="56_opml0"]
+[ext_resource type="Texture2D" uid="uid://dj13qovv5xaop" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_15_rotated.png" id="57_xcbrt"]
+[ext_resource type="Texture2D" uid="uid://6av2x2nplmoh" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_16_rotated.png" id="58_1cab0"]
+[ext_resource type="Texture2D" uid="uid://drkvtiou8g3p5" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_17_rotated.png" id="59_lxoql"]
+[ext_resource type="Texture2D" uid="uid://bmdptqqjmv13r" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_18_rotated.png" id="60_sgoar"]
+[ext_resource type="Texture2D" uid="uid://bccfuv8sf0coc" path="res://Sprites/SoldierRifle/SoldierReload/survivor-reload_rifle_19_rotated.png" id="61_laad4"]
+[ext_resource type="Texture2D" uid="uid://c3fqd0v4w1dit" path="res://Sprites/SoldierRifle/SoldierShoot/survivor-shoot_rifle_0_rotated.png" id="62_y0pnj"]
+[ext_resource type="Texture2D" uid="uid://sgqielu7ilwv" path="res://Sprites/SoldierRifle/SoldierShoot/survivor-shoot_rifle_1_rotated.png" id="63_abvfs"]
+[ext_resource type="Texture2D" uid="uid://d0yrgqre07pw5" path="res://Sprites/SoldierRifle/SoldierShoot/survivor-shoot_rifle_2_rotated.png" id="64_iduro"]
+[ext_resource type="Texture2D" uid="uid://dj72o4utv73cm" path="res://Sprites/Soldier/SoliderDowned.png" id="65_f1njt"]
+[ext_resource type="Texture2D" uid="uid://cu81yi2c8o15" path="res://Sprites/Soldier/TargetedSprite.png" id="66_xviul"]
+[ext_resource type="Texture2D" uid="uid://bxa0f5qcco5js" path="res://Sprites/Soldier/SelectedSprite.png" id="67_yrue4"]
+[ext_resource type="Texture2D" uid="uid://dfdjrxdsicitk" path="res://Sprites/Soldier/SoliderDefault.png" id="68_mt42k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_byptv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mbpm8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_slaun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_4ru8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ftu45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_qginn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_f1njt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_xviul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_yrue4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_mt42k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_pxaan")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r23vm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_lhjr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_2hd48")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_s0v2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_vur18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_g1blf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_v0vra")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_tmtx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_dspg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gnbnk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_b6qbr")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("22_a2unf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nebty")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ghhc8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_wdle2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_mse6x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_t2eoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_7trmw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_3aert")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_jlbkh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_p2rvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_patyb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_yc1dq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_8hk2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_0rxyu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_xgu6r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_0gnkc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_s5a67")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_0hhao")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_v0uak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_50esu")
+}],
+"loop": true,
+"name": &"Move",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("42_4gt3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_uh8ul")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_db5w0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_t4vax")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_854k4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_g6b3q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_klvx8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_s2rj3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_fsk5r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_0t8qo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_54bvt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_oy8qt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_35l66")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_jin6h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_opml0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_xcbrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_1cab0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_lxoql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_sgoar")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_laad4")
+}],
+"loop": true,
+"name": &"Reload",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("62_y0pnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_abvfs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_iduro")
+}],
+"loop": true,
+"name": &"Shoot",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_slaun"]
+size = Vector2(194, 285)
 
 [node name="Soldier" type="Area2D"]
 script = ExtResource("1_mbpm8")
@@ -14,3 +294,33 @@ shape = SubResource("RectangleShape2D_byptv")
 
 [node name="SoldierspriteAnimated" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_mbpm8")
+animation = &"Move"
+frame = 8
+frame_progress = 0.73015225
+
+[node name="Downed" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("65_f1njt")
+
+[node name="Targeted" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("66_xviul")
+
+[node name="Selected" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("67_yrue4")
+
+[node name="Message" type="RichTextLabel" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Ghost" type="Sprite2D" parent="."]
+visible = false
+modulate = Color(0, 0.8820822, 0, 0.3882353)
+texture = ExtResource("68_mt42k")
+
+[node name="Area2D" type="Area2D" parent="Ghost"]
+
+[node name="CollisionShape2DGhost" type="CollisionShape2D" parent="Ghost/Area2D"]
+position = Vector2(16, -1.5)
+shape = SubResource("RectangleShape2D_slaun")
