@@ -92,7 +92,15 @@ public partial class Hud : CanvasLayer
 
     private void _on_lineofsight_pressed()
     {
-        Soldier currentTarget = StoredData.Soldiers.Where(x => x.Character == StoredData.CurrentSoldierNode.Character.CurrentTarget).First();
+        IEnumerable<Soldier> Targets = StoredData.Soldiers.Where(x => x.Character == StoredData.CurrentSoldierNode.Character.CurrentTarget);
+
+        if (Targets.Count() == 0)
+        {
+            System.Diagnostics.Debug.Print("No Target Selected");
+            return;
+        }
+
+        Soldier currentTarget = Targets.First();
 
         Node2D targetnode = (Node2D)currentTarget;
 
