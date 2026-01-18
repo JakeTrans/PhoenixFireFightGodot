@@ -534,7 +534,7 @@ public partial class Hud : CanvasLayer
         }
     }
 
-    public uint GetRotation() // System  to assume all character models face north and rotation is clockwise
+    public uint GetCurrentRotation() // System  to assume all character models face north and rotation is clockwise
     {
         switch (Facing)
         {

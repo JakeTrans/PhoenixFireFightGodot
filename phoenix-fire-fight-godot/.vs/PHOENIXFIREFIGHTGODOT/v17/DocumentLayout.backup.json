@@ -49,7 +49,7 @@
               "RelativeDocumentMoniker": "Units\\Soldier.cs",
               "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Units\\Soldier.cs",
               "RelativeToolTip": "Units\\Soldier.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAkwGQAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAswGMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T19:43:23.314Z",
               "EditorCaption": ""
@@ -74,7 +74,7 @@
               "RelativeDocumentMoniker": "Hud.cs",
               "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
               "RelativeToolTip": "Hud.cs",
-              "ViewState": "AgIAAFkAAAAAAAAAAAAqwGIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAcCAAAAAAAAAAAkwBQCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-05T19:38:19.356Z",
               "EditorCaption": ""
@@ -89,8 +89,7 @@
               "RelativeToolTip": "Main.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAowBUAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-04T16:20:53.837Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-04T16:20:53.837Z"
             }
           ]
         }
