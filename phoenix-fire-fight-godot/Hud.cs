@@ -96,6 +96,12 @@ public partial class Hud : CanvasLayer
 
         Node2D targetnode = (Node2D)currentTarget;
 
+        if (targetnode == null)
+        {
+            System.Diagnostics.Debug.Print("No Target Selected");
+            return;
+        }
+
         if (StoredData.CurrentSoldierNode.CheckLOS(targetnode) == true)
         {
             System.Diagnostics.Debug.Print("Los");
