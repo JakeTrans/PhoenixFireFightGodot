@@ -99,19 +99,16 @@ public partial class Soldier : Node2D
 
     public bool CheckLOS(Node2D Target)
     {
-        var spaceState = GetWorld2D().DirectSpaceState;
-        var query = PhysicsRayQueryParameters2D.Create(this.Position, Target.Position);
-        query.CollideWithAreas = true;
-        var result = spaceState.IntersectRay(query);
+        PhysicsDirectSpaceState2D spaceState = GetWorld2D().DirectSpaceState;
+        // use global coordinates, not local to node
+        PhysicsRayQueryParameters2D query = PhysicsRayQueryParameters2D.Create(this.GlobalPosition, Target.GlobalPosition);
+        Godot.Collections.Dictionary result = spaceState.IntersectRay(query);
 
-        Object Collider = result["collider"] as Object;
-
-        if ((GodotObject)result["collider"] == Target)
+        if (result.Count == 0)
         {
-            GD.Print("true");
             return true;
         }
-        GD.Print("true");
+
         return false;
     }
 
