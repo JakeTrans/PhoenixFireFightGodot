@@ -1,4 +1,4 @@
-using FireFight.Classes;
+﻿using FireFight.Classes;
 using FireFight.Functions;
 using FireFightLibrary.Classes;
 using Godot;
@@ -505,10 +505,10 @@ public partial class Hud : CanvasLayer
         // Exclude the current soldier's Rid (if available)
         if (StoredData.CurrentSoldierNode != null && StoredData.CurrentSoldierNode.GhostCollisionShape != null)
         {
-            var excludeShape = StoredData.CurrentSoldierNode.GhostCollisionShape.Shape;
-            if (excludeShape != null)
+            var shape = StoredData.CurrentSoldierNode.GhostCollisionShape.Shape;
+            if (shape != null)
             {
-                query.Exclude = new Godot.Collections.Array<Godot.Rid> { excludeShape.GetRid() };
+                query.Exclude = new Godot.Collections.Array<Godot.Rid> { shape.GetRid() };
             }
         }
 

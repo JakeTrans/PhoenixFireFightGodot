@@ -1,0 +1,55 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:hud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|d:\\git\\phoenixfirefightgodot\\phoenix-fire-fight-godot\\units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E149B7F9-0D38-4A1F-A26A-FFE78F122E37}|PhoenixFireFightGodot.csproj|solutionrelative:units\\soldier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Soldier.cs",
+              "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Units\\Soldier.cs",
+              "RelativeDocumentMoniker": "Units\\Soldier.cs",
+              "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Units\\Soldier.cs",
+              "RelativeToolTip": "Units\\Soldier.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGUAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T14:37:34.74Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Hud.cs",
+              "DocumentMoniker": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
+              "RelativeDocumentMoniker": "Hud.cs",
+              "ToolTip": "D:\\Git\\PhoenixFireFightGodot\\phoenix-fire-fight-godot\\Hud.cs",
+              "RelativeToolTip": "Hud.cs",
+              "ViewState": "AgIAANIBAAAAAAAAAAAQwPsBAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-08T14:33:27.084Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

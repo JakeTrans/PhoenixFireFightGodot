@@ -1,4 +1,4 @@
-using FireFight.Classes;
+﻿using FireFight.Classes;
 using FireFight.Functions;
 using FireFightLibrary.Classes;
 using Godot;
@@ -503,13 +503,9 @@ public partial class Hud : CanvasLayer
         query.Transform = new Transform2D(0, ghostCollisionShape.GlobalPosition);
         // optional: exclude the current soldier so the ghost doesn't hit itself
         // Exclude the current soldier's Rid (if available)
-        if (StoredData.CurrentSoldierNode != null && StoredData.CurrentSoldierNode.GhostCollisionShape != null)
+        if (StoredData.CurrentSoldierNode != null)
         {
-            var excludeShape = StoredData.CurrentSoldierNode.GhostCollisionShape.Shape;
-            if (excludeShape != null)
-            {
-                query.Exclude = new Godot.Collections.Array<Godot.Rid> { excludeShape.GetRid() };
-            }
+            query.Exclude = new Godot.Collections.Array<Godot.Rid> { StoredData.CurrentSoldierNode.GetRid() };
         }
 
         var space = GetViewport().GetWorld2D().DirectSpaceState;
