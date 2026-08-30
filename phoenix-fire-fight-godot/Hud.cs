@@ -27,7 +27,11 @@ public partial class Hud : CanvasLayer
         StoredData.CurrentSoldierNode.Character.ActionsForTurn.ActionsTaken.Add(actionsPossible);
         System.Diagnostics.Debug.Print(actionsPossible.ToString());
         StoredData.CurrentSoldierNode.MessageLog.Add(actionsPossible.ToString());
-        GhostFunction(actionsPossible);
+        bool GhostCollide = GhostFunction(actionsPossible);
+
+        if (GhostCollide == true)
+        {
+        }
     }
 
     private void _on_n_pressed()
